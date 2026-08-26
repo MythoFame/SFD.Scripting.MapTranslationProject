@@ -30,6 +30,6 @@
         Inputs="@(Compile)"
         Outputs="$(OutDir)$(MSBuildProjectName).txt"
     >
-        <Exec Command="dotnet fsi &quot;$(Generator)&quot; @(Compile->'&quot;%(FullPath)&quot;', ' ') -o &quot;$(OutDir)$(MSBuildProjectName).txt&quot;" />
+        <Exec Command="dotnet fsi &quot;$(Generator)&quot; @(Compile->'&quot;%(FullPath)&quot;', ' ') -o &quot;$(OutDir)$(MSBuildProjectName).txt&quot; -m" />
     </Target>
 </Project>
