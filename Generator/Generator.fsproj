@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net10.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Model.fs" />
+        <Compile Include="Hash.fs" />
+        <Compile Include="Csv.fs" />
+        <Compile Include="Db.fs" />
+        <Compile Include="Validate.fs" />
+        <Compile Include="Emit.fs" />
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <Target Name="GenerateTranslations" DependsOnTargets="Build">
+        <Exec Command="dotnet &quot;$(TargetPath)&quot; generate --repo-dir &quot;$(TranslationRepoDir)&quot;" WorkingDirectory="$(MSBuildThisFileDirectory)" />
+    </Target>
+
+</Project>

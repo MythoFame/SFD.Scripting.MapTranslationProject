@@ -16,6 +16,8 @@
             <HintPath>$(GameSdkPath)/SFD.GameScriptInterface.dll</HintPath>
             <Private>false</Private>
         </Reference>
+
+        <Compile Remove="Generator/**" />
     </ItemGroup>
 
     <Target Name="CheckSdk" BeforeTargets="ResolveReferences">

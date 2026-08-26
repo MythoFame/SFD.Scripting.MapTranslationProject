@@ -1,0 +1,5 @@
+<Project>
+    <PropertyGroup>
+        <TranslationRepoDir>$(MSBuildThisFileDirectory)</TranslationRepoDir>
+    </PropertyGroup>
+</Project>
