@@ -15,8 +15,4 @@
         <Compile Include="Program.fs" />
     </ItemGroup>
 
-    <Target Name="GenerateTranslations" DependsOnTargets="Build">
-        <Exec Command="dotnet &quot;$(TargetPath)&quot; generate --repo-dir &quot;$(TranslationRepoDir)&quot;" WorkingDirectory="$(MSBuildThisFileDirectory)" />
-    </Target>
-
 </Project>
