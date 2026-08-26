@@ -15,10 +15,7 @@ public partial class GameScript : GameScriptInterfaceExtended
         {
             HostOnly = true
         });
-    }
 
-    public static void AfterStartup()
-    {
         if (string.IsNullOrEmpty(LanguageKey) || !Game.IsFirstUpdate) // don't do anything mid-game or with no lang set
         {
             return;
