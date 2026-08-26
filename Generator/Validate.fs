@@ -14,6 +14,9 @@ let private placeholderTokens (value: string) =
     |> Seq.sort
     |> List.ofSeq
 
+/// Dialogue name boxes can only display so much text.
+let private maxDialogueNameLength = 16
+
 /// Runs all advisory checks over a successfully loaded database.
 /// Returns coverage info lines, warnings, and errors.
 let run (db: Database) : string list * string list * string list =
@@ -63,6 +66,12 @@ let run (db: Database) : string list * string list * string list =
 
                         let originalLength = String.length original
                         let translationLength = String.length translation
+
+                        if entry.Kind = DialogueName && translationLength > maxDialogueNameLength then
+                            errors.Add(
+                                $"{map.Guid} {language} '{kv.Key}': "
+                                + $"dialogue name exceeds {maxDialogueNameLength} characters ({translationLength})"
+                            )
 
                         if float translationLength > float originalLength * 1.5
                            && translationLength - originalLength > 10 then
