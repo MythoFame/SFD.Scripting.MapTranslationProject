@@ -11,13 +11,33 @@ public partial class GameScript : GameScriptInterfaceExtended
 
         if (string.IsNullOrWhiteSpace(msg))
         {
-            Game.ShowChatMessage("You must provide a valid language key! e.g. es");
+            Game.ShowChatMessage($"Available languages: {string.Join(", ", TranslationsDatabase.LanguageCodes)}", Color.Yellow, uid);
 
             return;
         }
 
-        LanguageKey = msg;
+        if (msg.Equals("original", StringComparison.OrdinalIgnoreCase))
+        {
+            LanguageKey = null;
 
-        Game.ShowChatMessage($"Language set to {msg}!", Color.Green, uid);
+            Game.ShowChatMessage("Language reset to original.", Color.Green, uid);
+
+            return;
+        }
+
+        int index = Array.FindIndex(
+            TranslationsDatabase.LanguageCodes,
+            code => code.Equals(msg, StringComparison.OrdinalIgnoreCase));
+
+        if (index < 0)
+        {
+            Game.ShowChatMessage($"Unknown language '{msg}'! Available: {string.Join(", ", TranslationsDatabase.LanguageCodes)}", Color.Red, uid);
+
+            return;
+        }
+
+        LanguageKey = TranslationsDatabase.LanguageCodes[index];
+
+        Game.ShowChatMessage($"Language set to {TranslationsDatabase.LanguageDisplayNames[index]}! Re-enter the map to apply it.", Color.Green, uid);
     }
 }

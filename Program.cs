@@ -19,24 +19,11 @@ public partial class GameScript : GameScriptInterfaceExtended
 
     public static void AfterStartup()
     {
-        if (string.IsNullOrEmpty(LanguageKey) || !Game.IsFirstUpdate)
+        if (string.IsNullOrEmpty(LanguageKey) || !Game.IsFirstUpdate) // don't do anything mid-game or with no lang set
         {
             return;
         }
 
-        foreach (IObjectDialogueTrigger dialogueTrigger in Game.GetObjects<IObjectDialogueTrigger>())
-        {
-            string text = dialogueTrigger.GetDialogueText();
-            string name = dialogueTrigger.GetDialogueName();
-
-            // ...
-        }
-
-        foreach (IObjectText objectText in Game.GetObjects<IObjectText>())
-        {
-            string text = objectText.GetText();
-
-            // ...
-        }
+        ApplyTranslations();
     }
 }
