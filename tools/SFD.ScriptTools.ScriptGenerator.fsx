@@ -21,21 +21,24 @@ let wrapperClassName = "__SFDScriptGeneratorFormattingWrapper__"
 // Argument parsing
 
 let printUsage () =
-    printfn "Usage: SFD.ScriptTools.ScriptGenerator.fsx <file1.cs> [file2.cs ...] [-o|--output <path>] [-h|--help]"
+    printfn "Usage: SFD.ScriptTools.ScriptGenerator.fsx <file1.cs> [file2.cs ...] [-o|--output <path>] [-m|--minified] [-h|--help]"
     printfn ""
     printfn "  <file.cs>...  One or more C# source files to weld together"
     printfn "  -o, --output  Path to write the resulting welded .csx file to (required)"
+    printfn "  -m, --minified  Additionally write a minified copy (<name>.min.txt next to the output)"
     printfn "  -h, --help    Show this help message and exit"
 
 type ParsedArgs =
     { Files: string list
       Output: string option
+      Minified: bool
       Help: bool }
 
 let rec parseArgs (args: string list) (acc: ParsedArgs) =
     match args with
     | [] -> { acc with Files = List.rev acc.Files }
     | ("-o" | "--output") :: value :: rest -> parseArgs rest { acc with Output = Some value }
+    | ("-m" | "--minified") :: rest -> parseArgs rest { acc with Minified = true }
     | ("-h" | "--help") :: rest -> parseArgs rest { acc with Help = true }
     | token :: rest when token.EndsWith(".cs", StringComparison.OrdinalIgnoreCase) ->
         parseArgs rest { acc with Files = token :: acc.Files }
@@ -50,6 +53,7 @@ let parsed =
         scriptArgs
         { Files = []
           Output = None
+          Minified = false
           Help = false }
 
 if parsed.Help then
@@ -175,6 +179,157 @@ let formatMemberBlock (rawBody: string) : string =
         |> String.concat ""
         |> dedentOneLevel
 
+/// Either an individual token or an interpolated string kept byte-for-byte.
+type private MinSegment =
+    | MinTok of SyntaxToken
+    | MinChunk of string
+
+/// Re-emits a member block from its raw token stream with all trivia
+/// (comments, whitespace) removed. Every candidate is verified by re-parsing
+/// and comparing token texts, so the result is guaranteed to lex identically
+/// to the input. Interpolated strings ($"...") are kept as verbatim chunks,
+/// since Roslyn splits them into several tokens and inserting even a single
+/// space between those would alter the produced string value.
+let minifyMemberBlock (rawBody: string) : string option =
+    let wrapped s = sprintf "class %s\n{\n%s\n}" wrapperClassName s
+
+    try
+        let root = CSharpSyntaxTree.ParseText(wrapped rawBody).GetRoot()
+
+        let wrapperClass =
+            root.DescendantNodes()
+            |> Seq.tryPick (fun n ->
+                match n with
+                | :? ClassDeclarationSyntax as c when c.Identifier.ValueText = wrapperClassName -> Some c
+                | _ -> None)
+
+        match wrapperClass with
+        | None ->
+            eprintfn "Warning: minification step failed unexpectedly."
+            None
+        | Some c ->
+            // Token texts of just the members (the wrapper class scaffolding
+            // is excluded); used to build candidates and to verify them.
+            let memberTokenTexts (sourceRoot: SyntaxNode) : string array option =
+                sourceRoot.DescendantNodes()
+                |> Seq.tryPick (fun n ->
+                    match n with
+                    | :? ClassDeclarationSyntax as cc when cc.Identifier.ValueText = wrapperClassName -> Some cc
+                    | _ -> None)
+                |> Option.map (fun cc ->
+                    cc.Members
+                    |> Seq.collect (fun m -> m.DescendantTokens())
+                    |> Seq.filter (fun t -> not (t.IsKind(SyntaxKind.EndOfFileToken)))
+                    |> Seq.map (fun t -> t.Text)
+                    |> Array.ofSeq)
+
+            let originalTexts =
+                match memberTokenTexts root with
+                | Some texts -> texts
+                | None -> [||]
+
+            let lexesIdentically (candidate: string) =
+                match memberTokenTexts (CSharpSyntaxTree.ParseText(wrapped candidate).GetRoot()) with
+                | Some re ->
+                    Array.length re = Array.length originalTexts && Array.forall2 (=) re originalTexts
+                | None -> false
+
+            let segments = ResizeArray<MinSegment>()
+
+            for m in c.Members do
+                let nodeText = m.ToString()
+
+                // Outermost interpolated strings only (nested ones are part
+                // of their parent's chunk).
+                let outermost =
+                    m.DescendantNodes()
+                    |> Seq.choose (fun n ->
+                        match n with
+                        | :? InterpolatedStringExpressionSyntax as i -> Some i.Span
+                        | _ -> None)
+                    |> fun spans ->
+                        let parents = System.Collections.Generic.List<Text.TextSpan>()
+
+                        spans
+                        |> Seq.sortByDescending (fun s -> s.Start, s.Length)
+                        |> Seq.iter (fun s ->
+                            if parents |> Seq.exists (fun p -> p.Contains s) |> not then
+                                parents.Add s)
+
+                        parents.ToArray()
+
+                let mutable skipUntil = -1
+
+                for t in m.DescendantTokens() do
+                    if t.IsKind(SyntaxKind.EndOfFileToken) then ()
+                    elif skipUntil >= 0 && t.Span.End <= skipUntil then ()
+                    else
+                        match outermost |> Array.tryFind (fun s -> s.Contains t.SpanStart) with
+                        | Some s ->
+                            segments.Add(MinChunk(nodeText.Substring(s.Start - m.SpanStart, s.Length)))
+                            skipUntil <- s.End
+                        | None -> segments.Add(MinTok t)
+
+            if segments.Count = 0 then
+                Some ""
+            else
+                let render (seg: MinSegment) =
+                    match seg with
+                    | MinTok t -> t.Text
+                    | MinChunk s -> s
+
+                // Zero-width tokens (e.g. the omitted array size in 'T[]')
+                // carry empty text; they are grammar-implied and regenerate on
+                // reparse, so they must not take part in spacing decisions.
+                let rendered =
+                    segments
+                    |> Seq.map render
+                    |> Array.ofSeq
+                    |> Array.filter (fun s -> s.Length > 0)
+
+                if rendered.Length = 0 then
+                    Some ""
+                else
+                    let lastChar (s: string) = s.[s.Length - 1]
+                    let firstChar (s: string) = s.[0]
+
+                    // Attempt 1: jam every segment together.
+                    let tight = String.concat "" rendered
+
+                    if lexesIdentically tight then
+                        Some tight
+                    else
+                        // Attempt 2: single space only where gluing could merge
+                        // tokens (identifier/keyword boundaries or operator pairs).
+                        let isIdentChar (ch: char) = Char.IsLetterOrDigit ch || ch = '_' || ch = '@'
+                        let isOpChar (ch: char) = "+-<>%&|^!=?:.*/~".IndexOf(ch) >= 0
+
+                        let spaced =
+                            rendered
+                            |> Seq.mapi (fun i s ->
+                                if i = 0 then
+                                    s
+                                else
+                                    let pl = lastChar rendered.[i - 1]
+                                    let fc = firstChar s
+
+                                    if (isIdentChar pl && isIdentChar fc)
+                                       || (isOpChar pl && isOpChar fc) then
+                                        " " + s
+                                    else
+                                        s)
+                            |> String.concat ""
+
+                        if lexesIdentically spaced then
+                            Some spaced
+                        else
+                            // Last resort: a space between every segment. Cannot
+                            // corrupt interpolated strings since those stay whole.
+                            Some(String.concat " " rendered)
+    with ex ->
+        eprintfn "Warning: minification failed (%s)." ex.Message
+        None
+
 // Extraction: pull everything inside the GameScript class out of each file,
 // then format and dedent it, and finally prepend a flush-left header comment
 // naming the source file.
@@ -238,3 +393,20 @@ if not (String.IsNullOrEmpty outputDir) && not (Directory.Exists outputDir) then
 File.WriteAllText(fullOutputPath, finalCode.Trim() + Environment.NewLine)
 
 printfn "Wrote welded script (%d file(s)) to: %s" weldedSections.Length fullOutputPath
+
+if parsed.Minified then
+    let body = weldedSections |> String.concat "\n\n"
+
+    match minifyMemberBlock body with
+    | None ->
+        eprintfn "Failed to produce minified output."
+        exit 1
+    | Some minified ->
+        let minifiedPath =
+            if Path.HasExtension fullOutputPath then
+                Path.ChangeExtension(fullOutputPath, ".min.txt")
+            else
+                fullOutputPath + ".min.txt"
+
+        File.WriteAllText(minifiedPath, minified.Trim() + Environment.NewLine)
+        printfn "Wrote minified script (%d -> %d chars) to: %s" body.Length minified.Length minifiedPath

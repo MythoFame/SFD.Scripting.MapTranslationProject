@@ -42,11 +42,14 @@ Since the welded output cannot contain `using` directives, the script checks eac
 
 The remaining bodies are concatenated (each preceded by a comment noting its source file) and whitespace-normalized via Roslyn's Formatter before being written to disk.
 
+Pass `--minified` to additionally write a minified copy (`<name>.min.txt` next to the output): all comments and non-essential whitespace are stripped, while the result is guaranteed to lex identically to the readable version.
+
 ```sh
-Usage: SFD.ScriptTools.ScriptGenerator.fsx <file1.cs> [file2.cs ...] [-o|--output <path>] [-h|--help]
+Usage: SFD.ScriptTools.ScriptGenerator.fsx <file1.cs> [file2.cs ...] [-o|--output <path>] [-m|--minified] [-h|--help]
 
   <file.cs>...  One or more C# source files to weld together
   -o, --output  Path to write the resulting welded .csx file to (required)
+  -m, --minified  Additionally write a minified copy (<name>.min.txt next to the output)
   -h, --help    Show this help message and exit
 ```
 
