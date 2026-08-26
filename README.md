@@ -48,6 +48,8 @@ Supported `kind` values are `dialogue-text`, `dialogue-name`, and `text`. Any ot
 ```sh
 just validate-translations   # lint + coverage, exits non-zero on errors
 just generate-translations   # db → Translation/Data.generated.cs
+
+just generate-script         # compile + welds to SFD.Scripting.MapTranslationProject.txt
 ```
 
 ### Quality checks
