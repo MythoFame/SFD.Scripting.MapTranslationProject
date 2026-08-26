@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <RequiredGameSdkVersion>1.0.0+637c4a25d95430c02cb5082660ed33efe542ce3e</RequiredGameSdkVersion>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+
+        <!-- Default location; users can override in Directory.Build.props -->
+        <GameSdkPath Condition="'$(GameSdkPath)' == ''">$(MSBuildThisFileDirectory)lib</GameSdkPath>
+
+        <Generator>$(MSBuildThisFileDirectory)tools/SFD.ScriptTools.ScriptGenerator.fsx</Generator>
+        <Validator>$(MSBuildThisFileDirectory)tools/SFD.ScriptTools.LibrarySetup.fsx</Validator>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="SFD.GameScriptInterface">
+            <HintPath>$(GameSdkPath)/SFD.GameScriptInterface.dll</HintPath>
+            <Private>false</Private>
+        </Reference>
+    </ItemGroup>
+
+    <Target Name="CheckSdk" BeforeTargets="ResolveReferences">
+        <Exec Command="dotnet fsi &quot;$(Validator)&quot; --dry-run" />
+    </Target>
+
+    <Target
+        Name="GenerateScript"
+        DependsOnTargets="Build"
+        Inputs="@(Compile)"
+        Outputs="$(OutDir)$(MSBuildProjectName).txt"
+    >
+        <Exec Command="dotnet fsi &quot;$(Generator)&quot; @(Compile->'&quot;%(FullPath)&quot;', ' ') -o &quot;$(OutDir)$(MSBuildProjectName).txt&quot;" />
+    </Target>
+</Project>
