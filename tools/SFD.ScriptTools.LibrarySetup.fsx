@@ -89,7 +89,7 @@ let existingNestedCopies =
 let resolveSourcePath () : string option =
     match explicitFile with
     | Some path ->
-        if File.Exists(path) then
+        if File.Exists path then
             Some(Path.GetFullPath path)
         else
             eprintfn "Specified file via -f does not exist: %s" path
@@ -208,7 +208,7 @@ let sanitizeVersion (s: string) =
 
 let assemblyVersion =
     try
-        let fvi = FileVersionInfo.GetVersionInfo(dllPath)
+        let fvi = FileVersionInfo.GetVersionInfo dllPath
         let v = sanitizeVersion fvi.ProductVersion
 
         if String.IsNullOrEmpty v then
@@ -247,7 +247,7 @@ match assemblyVersion with
             RegexOptions.Singleline
         )
 
-    match fieldRegex.Match(csprojText) with
+    match fieldRegex.Match csprojText with
     | m when m.Success ->
         let fieldText = m.Groups.[1].Value.Trim()
 
@@ -286,9 +286,9 @@ match assemblyVersion with
         // Insert the field right after the opening tag of the first <PropertyGroup>,
         // inheriting its indentation (plus one level) so the file's formatting is
         // preserved instead of having the whole document re-flowed by an XML parser.
-        let pgRegex = Regex(@"([ \t]*)<PropertyGroup[^>]*>\r?\n")
+        let pgRegex = Regex @"([ \t]*)<PropertyGroup[^>]*>\r?\n"
 
-        match pgRegex.Match(csprojText) with
+        match pgRegex.Match csprojText with
         | pgm when pgm.Success ->
             let indent = pgm.Groups.[1].Value + "    "
             let entry = sprintf "%s<RequiredGameSdkVersion>%s</RequiredGameSdkVersion>%s" indent v Environment.NewLine

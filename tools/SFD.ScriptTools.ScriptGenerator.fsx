@@ -99,8 +99,8 @@ let collectForbiddenUsings (filePath: string) : (string * string) list =
             | :? UsingDirectiveSyntax as u ->
                 let name = u.Name.ToFullString().Trim()
                 let label = u.ToString().TrimEnd(';', '\n', '\r').Trim()
-                let isGlobal = u.GlobalKeyword.IsKind(SyntaxKind.GlobalKeyword)
-                let isStatic = u.StaticKeyword.IsKind(SyntaxKind.StaticKeyword)
+                let isGlobal = u.GlobalKeyword.IsKind SyntaxKind.GlobalKeyword
+                let isStatic = u.StaticKeyword.IsKind SyntaxKind.StaticKeyword
                 let hasAlias = not (isNull u.Alias)
                 let isAllowed = not isGlobal && not isStatic && not hasAlias && name = "SFDGameScriptInterface"
 
@@ -128,7 +128,7 @@ if not forbiddenUsings.IsEmpty then
 // back off so the code sits flush with our own header comments.
 
 let dedentOneLevel (text: string) : string =
-    let lines = text.Replace("\r\n", "\n").Split('\n')
+    let lines = text.Replace("\r\n", "\n").Split '\n'
 
     let nonBlankLines = lines |> Array.filter (fun l -> l.Trim() <> "")
 
@@ -146,8 +146,8 @@ let dedentOneLevel (text: string) : string =
             lines
             |> Array.map (fun l ->
                 if l.Trim() = "" then ""
-                elif l.Length >= minIndent then l.Substring(minIndent)
-                else l.TrimStart(' '))
+                elif l.Length >= minIndent then l.Substring minIndent
+                else l.TrimStart ' ')
             |> String.concat "\n"
 
 let workspace = new AdhocWorkspace()
@@ -158,7 +158,7 @@ let workspace = new AdhocWorkspace()
 /// indentation the wrapper class introduced.
 let formatMemberBlock (rawBody: string) : string =
     let wrapperSource = sprintf "class %s\n{\n%s\n}" wrapperClassName rawBody
-    let wrapperTree = CSharpSyntaxTree.ParseText(wrapperSource)
+    let wrapperTree = CSharpSyntaxTree.ParseText wrapperSource
     let wrapperRoot = wrapperTree.GetRoot()
     let formattedRoot = Formatter.Format(wrapperRoot, workspace)
 
@@ -219,7 +219,7 @@ let minifyMemberBlock (rawBody: string) : string option =
                 |> Option.map (fun cc ->
                     cc.Members
                     |> Seq.collect (fun m -> m.DescendantTokens())
-                    |> Seq.filter (fun t -> not (t.IsKind(SyntaxKind.EndOfFileToken)))
+                    |> Seq.filter (fun t -> not (t.IsKind SyntaxKind.EndOfFileToken))
                     |> Seq.map (fun t -> t.Text)
                     |> Array.ofSeq)
 
@@ -261,7 +261,7 @@ let minifyMemberBlock (rawBody: string) : string option =
                 let mutable skipUntil = -1
 
                 for t in m.DescendantTokens() do
-                    if t.IsKind(SyntaxKind.EndOfFileToken) then ()
+                    if t.IsKind SyntaxKind.EndOfFileToken then ()
                     elif skipUntil >= 0 && t.Span.End <= skipUntil then ()
                     else
                         match outermost |> Array.tryFind (fun s -> s.Contains t.SpanStart) with
@@ -302,7 +302,7 @@ let minifyMemberBlock (rawBody: string) : string option =
                         // Attempt 2: single space only where gluing could merge
                         // tokens (identifier/keyword boundaries or operator pairs).
                         let isIdentChar (ch: char) = Char.IsLetterOrDigit ch || ch = '_' || ch = '@'
-                        let isOpChar (ch: char) = "+-<>%&|^!=?:.*/~".IndexOf(ch) >= 0
+                        let isOpChar (ch: char) = "+-<>%&|^!=?:.*/~".IndexOf ch >= 0
 
                         let spaced =
                             rendered
@@ -313,8 +313,8 @@ let minifyMemberBlock (rawBody: string) : string option =
                                     let pl = lastChar rendered.[i - 1]
                                     let fc = firstChar s
 
-                                    if (isIdentChar pl && isIdentChar fc)
-                                       || (isOpChar pl && isOpChar fc) then
+                                    if isIdentChar pl && isIdentChar fc
+                                       || isOpChar pl && isOpChar fc then
                                         " " + s
                                     else
                                         s)
@@ -340,7 +340,7 @@ let tryExtractGameScriptBody (filePath: string) : string option =
         None
     else
         let source = File.ReadAllText filePath
-        let tree = CSharpSyntaxTree.ParseText(source)
+        let tree = CSharpSyntaxTree.ParseText source
         let root = tree.GetRoot()
 
         let classDecl =
