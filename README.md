@@ -32,8 +32,8 @@ All translations live in [`db/`](db/). Each map has its own directory, named aft
 db/
 ├── languages.json                  # supported language codes + display names
 └── maps/<MapOriginalGUID>/
-    ├── strings.csv                 # original,key,kind  (canonical source texts)
-    └── <lang>.csv                  # key,translation    (one per language, blanks = untranslated)
+    ├── strings.tsv                 # original,key,kind  (canonical source texts)
+    └── <lang>.tsv                  # key,translation    (one per language, blanks = untranslated)
 ```
 
 Supported `kind` values are `dialogue-text`, `dialogue-name`, `text`, and `popup`. Any other file in `db/maps/<GUID>/` (e.g. README.md) is silently ignored.
@@ -41,8 +41,10 @@ Supported `kind` values are `dialogue-text`, `dialogue-name`, `text`, and `popup
 ### Adding a new map or string
 
 1. Open the map in the map editor.
-2. Copy the exact in-game strings (including newlines) into `strings.csv` under columns `original,key,kind`. Invent a stable, human-readable key for each entry.
-3. Create or edit `<lang>.csv` files; each row is `key,translation`. Leave `translation` blank for untranslated entries.
+2. Copy the exact in-game strings into `strings.tsv` under columns `original,key,kind`. Invent a stable, human-readable key for each entry.
+3. Create or edit `<lang>.tsv` files; each row is `key,translation`. Leave `translation` blank for untranslated entries.
+
+Tables are tab-separated: fields never need quoting, so commas and quotes in dialogue text work as-is. Within a field, write `\n` for a line break, `\t` for a tab, `\r` for a carriage return, and `\\` for a literal backslash.
 4. Run validation, regenerate the script data, and build:
 
 ```sh

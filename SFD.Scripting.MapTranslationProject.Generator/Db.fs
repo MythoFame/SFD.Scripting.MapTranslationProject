@@ -10,7 +10,7 @@ exception DbError of message: string
 let private fail (path: string) (message: string) =
     raise (DbError($"{path}: {message}"))
 
-/// Builds a column accessor for a parsed CSV table. Headers are matched after
+/// Builds a column accessor for a parsed TSV table. Headers are matched after
 /// trimming; short rows yield empty strings for missing trailing cells.
 let private makeGetter (path: string) (header: string list) (required: string list) =
     let trimmed = header |> List.map (fun h -> h.Trim())
@@ -27,8 +27,13 @@ let private makeGetter (path: string) (header: string list) (required: string li
 let private isBlankRow (row: string list) =
     row |> List.forall (fun field -> field.Trim() = "")
 
+/// Parses a TSV file, attaching the file path to any parsing error.
+let private parseTable (path: string) : string list list =
+    try Tsv.parse (File.ReadAllText path)
+    with Tsv.TsvError message -> fail path message
+
 let private loadStrings (path: string) : StringEntry list =
-    let rows = Csv.parse (File.ReadAllText path)
+    let rows = parseTable path
 
     match rows with
     | [] -> fail path "file has no header row"
@@ -75,7 +80,7 @@ let private loadStrings (path: string) : StringEntry list =
         entries
 
 let private loadTranslation (knownKeys: Map<string, unit>) (path: string) : Map<string, string> =
-    let rows = Csv.parse (File.ReadAllText path)
+    let rows = parseTable path
 
     match rows with
     | [] -> fail path "file has no header row"
@@ -93,7 +98,7 @@ let private loadTranslation (knownKeys: Map<string, unit>) (path: string) : Map<
                 elif Map.containsKey key table then
                     fail path $"duplicate key '{key}'"
                 elif not (Map.containsKey key knownKeys) then
-                    fail path $"'{key}' does not exist in strings.csv"
+                    fail path $"'{key}' does not exist in strings.tsv"
                 else Map.add key translation table)
 
 let private getStringProperty (element: JsonElement) (name: string) =
@@ -141,7 +146,7 @@ let private loadLanguages (path: string) : LanguageInfo list =
         |> List.rev
 
 /// Loads the whole database from a `db/` directory. Any file other than
-/// `languages.json`, `strings.csv`, or well-formed `<lang>.csv` tables inside
+/// `languages.json`, `strings.tsv`, or well-formed `<lang>.tsv` tables inside
 /// map directories is ignored.
 let load (dbDir: string) : Database =
     let languagesPath = Path.Combine(dbDir, "languages.json")
@@ -158,16 +163,16 @@ let load (dbDir: string) : Database =
     let maps =
         Directory.GetDirectories(mapsRoot)
         |> Array.sort
-        |> Array.filter (fun directory -> File.Exists(Path.Combine(directory, "strings.csv")))
+        |> Array.filter (fun directory -> File.Exists(Path.Combine(directory, "strings.tsv")))
         |> Array.map (fun directory ->
             let guid = Path.GetFileName directory
-            let stringsPath = Path.Combine(directory, "strings.csv")
+            let stringsPath = Path.Combine(directory, "strings.tsv")
             let entries = loadStrings stringsPath
             let knownKeys = entries |> List.map (fun e -> e.Key, ()) |> Map.ofList
 
             let translations =
-                Directory.GetFiles(directory, "*.csv")
-                |> Array.filter (fun file -> Path.GetFileName file <> "strings.csv")
+                Directory.GetFiles(directory, "*.tsv")
+                |> Array.filter (fun file -> Path.GetFileName file <> "strings.tsv")
                 |> Array.map (fun file ->
                     Path.GetFileNameWithoutExtension file, loadTranslation knownKeys file)
                 |> Map.ofArray

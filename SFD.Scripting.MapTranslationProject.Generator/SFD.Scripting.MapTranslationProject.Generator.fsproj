@@ -8,7 +8,7 @@
     <ItemGroup>
         <Compile Include="Model.fs" />
         <Compile Include="Hash.fs" />
-        <Compile Include="Csv.fs" />
+        <Compile Include="Tsv.fs" />
         <Compile Include="Db.fs" />
         <Compile Include="Validate.fs" />
         <Compile Include="Emit.fs" />
