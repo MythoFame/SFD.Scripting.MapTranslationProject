@@ -16,6 +16,11 @@ public partial class GameScript : GameScriptInterfaceExtended
             HostOnly = true
         });
 
+        CommandHandler.ActiveCommands.Add(new("TRANSLATION_DUMP", TranslationDump)
+        {
+            HostOnly = true
+        });
+
         if (string.IsNullOrEmpty(LanguageKey) || !Game.IsFirstUpdate) // don't do anything mid-game or with no lang set
         {
             return;

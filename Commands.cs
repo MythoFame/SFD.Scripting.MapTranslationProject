@@ -40,4 +40,45 @@ public partial class GameScript : GameScriptInterfaceExtended
 
         Game.ShowChatMessage($"Language set to {TranslationsDatabase.LanguageDisplayNames[index]}! Re-enter the map to apply it.", Color.Green, uid);
     }
+
+    public static void TranslationDump(UserMessageCallbackArgs args)
+    {
+        IScriptStorage storage = Game.GetSharedStorage("translationdump");
+
+        storage.Clear(); // drop stale rows from a previous, larger dump
+        storage.SetItem(nameof(IGame.MapOriginalGUID), Game.MapOriginalGUID.ToString());
+
+        string chapter = Game.CampaignCurrentMapPartIndex != -1
+            ? $"{Game.CampaignCurrentMapPartIndex}."
+            : string.Empty;
+
+        int keyNum = 0;
+
+        void Dump(string value, string kind)
+        {
+            if (string.IsNullOrEmpty(value)) return;
+
+            keyNum++;
+            string key = $"{chapter}{kind}.placeholder.{keyNum}";
+            storage.SetItem($"{kind}.{keyNum}", $"{value}\t{key}\t{kind}");
+        }
+
+        foreach (IObjectDialogueTrigger dialogueTrigger in Game.GetObjects<IObjectDialogueTrigger>())
+        {
+            Dump(dialogueTrigger.GetDialogueText(), "dialogue-text");
+            Dump(dialogueTrigger.GetDialogueName(), "dialogue-name");
+        }
+
+        foreach (IObjectText objectText in Game.GetObjects<IObjectText>())
+        {
+            Dump(objectText.GetText(), "text");
+        }
+
+        foreach (IObjectPopupMessageTrigger popupTrigger in Game.GetObjects<IObjectPopupMessageTrigger>())
+        {
+            Dump(popupTrigger.GetPopupMessage(), "popup");
+        }
+
+        Game.ShowChatMessage("Created dump!", Color.Green, args.User.UserIdentifier);
+    }
 }

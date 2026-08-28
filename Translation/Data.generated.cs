@@ -11,6 +11,54 @@ public partial class GameScript : GameScriptInterfaceExtended
 
         public static readonly Dictionary<string, Dictionary<string, Dictionary<ulong, string>>> Maps = new()
         {
+            ["0546d635-8383-4d98-a19b-06e45390f2f2"] = new()
+            {
+                ["es"] = new()
+                {
+                    [0x036a7ec59a2378aeUL] = "Entendido, Reina B.",
+                    [0x04288307a2f02760UL] = "Hola. Quiero denunciar el paradero de un notorio ASESINO EN SERIE.",
+                    [0x0f5797910f6e4222UL] = "¡Yeee-hahhh!!",
+                    [0x11102a388b0c488aUL] = "Yo.",
+                    [0x39b52944cab631faUL] = "¡Eh, CUIDADO!",
+                    [0x3a224d0ee5a8c249UL] = "¡Sangre! ¡Sangre para BALISTA!",
+                    [0x3a9ff2ee65fcda1eUL] = "BANDA HIVE\r\n ¡MOLA!",
+                    [0x40fedf513f4bf84fUL] = "Ciudad Soleada, 20XX\r\n\r\n",
+                    [0x43f92a5c402137ddUL] = "Demasiados... ¡demasiados!",
+                    [0x44cc3f3f7d3fe1e0UL] = "Al menos la electricidad ha vuelto... pero ¿qué demonios pasa con las cámaras de seguridad?",
+                    [0x48f915a5bbed5545UL] = "Ruido extraño... lo ignoraré.",
+                    [0x4fea2fa39f3b3823UL] = "¡Se lo merecen! No sé qué trama McBride, pero es un buen poli. Ya quedan pocos en esta ciudad...",
+                    [0x5dc60337c07f4fe1UL] = "Ciudad Soleada, 20XX\r\n\r\nComisaría 9",
+                    [0x60cc6f21806e3e1cUL] = "Mfgllll mfwrrrr! ¡MFWRRRR!",
+                    [0x6b2c32be2d6e8929UL] = "¡Matad también a los prisioneros! ¡Tenemos a todos los guerreros que necesitamos!",
+                    [0x6d1da39229b50eb2UL] = "Has oído a la señora, poli. ¡Es hora de decir buenas noches!",
+                    [0x6e2d3cb39ba594cbUL] = "¡CABRONES! ¡No os saldréis con la vuestra!",
+                    [0x70897260e656a02cUL] = "Bloque",
+                    [0x72a8dd799de66b83UL] = "SALIDA",
+                    [0x76bae89ee56047a0UL] = "¡Dios nos ampare, es la Banda Hive!",
+                    [0x794b42e6e43d51acUL] = "No.",
+                    [0x80dc943a46520f6cUL] = "¡Jefe! ¡Quiero mi llamada!",
+                    [0x8b8b89dc8de8ecf6UL] = "Matadlos.",
+                    [0x919ac2597112e633UL] = "¡Nadie sale, por orden de Balista!",
+                    [0x9445dc6be5a3ee7dUL] = "No sé. Quería interrogarlos o algo así. O quizá solo quería fastidiar a esos escorias corporativas.",
+                    [0x993a2f48484a41e2UL] = "¡OYE! ¿No tenéis ningún respeto por la ley y el orden?!",
+                    [0xa5a988f92c1e63c4UL] = "¿¡Muerto!?\r\n\r\nQuienquiera que seas, acabas de cabrear a la Banda Hive.",
+                    [0xa5e7abbb835df100UL] = "BANDA HIVE",
+                    [0xa63fb33072e54399UL] = "Mujer misteriosa",
+                    [0xa6584a89b26fe7b3UL] = "MATAR",
+                    [0xc232981f08e5d7beUL] = "Lo sé PERFECTAMENTE, detective. Buenas noches.",
+                    [0xc2df6869edc67547UL] = "MATA\r\nLOS\r\nTODOS",
+                    [0xcf18e1924041e938UL] = "Quiero que se sellen todas las salidas. Que nadie entre ni salga. Voy a visitar al Comisario.",
+                    [0xdab28176b0d9658fUL] = " ¡MOLA",
+                    [0xdc9628a2e5dccd50UL] = "AYUDA",
+                    [0xe2a689e0ef6356deUL] = "¿Q-qué demonios pasa ahí fuera?",
+                    [0xe62825a3f17a8e22UL] = "Sí, sí. ¡Baja el tono!",
+                    [0xe63446bb533998e4UL] = "¡B-Balista!",
+                    [0xeb6ea4fbdae67a8dUL] = "BALISTA\r\n  ES\r\nREINA",
+                    [0xf0656dbb5ab6cab8UL] = "Claro, señora. ¿Quién?",
+                    [0xf563e820c21015beUL] = "Ciudad Soleada, 20XX\r\n\r\n",
+                    [0xfe1e16ae5a0d8fdbUL] = "¿Y por qué trajo McBride a esos luchadores renegados? MetroLaw acabará con ellos - no tiene sentido resistirse.",
+                },
+            },
             ["9981018a-c343-442a-983e-719321c4da59"] = new()
             {
                 ["es"] = new()
