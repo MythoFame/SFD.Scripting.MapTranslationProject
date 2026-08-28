@@ -1,43 +1,136 @@
 original	key	kind
-No one gets out, by order of Balista!	0.dialogue-text.placeholder.1	dialogue-text
-Mfgllll mfwrrrr! MFWRRRR!	0.dialogue-text.placeholder.2	dialogue-text
-Hey chief! I want my phone call!	0.dialogue-text.placeholder.3	dialogue-text
-Hey, LOOK OUT!	0.dialogue-text.placeholder.4	dialogue-text
-W-what the hell's going ON out there?	0.dialogue-text.placeholder.5	dialogue-text
-Kill the prisoners too! We have all the warriors we need!	0.dialogue-text.placeholder.6	dialogue-text
-God save us - it's the Hive Gang!	0.dialogue-text.placeholder.7	dialogue-text
-HEY! Don't you guys have any respect for law and order?!	0.dialogue-text.placeholder.8	dialogue-text
-Nope.	0.dialogue-text.placeholder.9	dialogue-text
-Kill them.	0.dialogue-text.placeholder.10	dialogue-text
-You BASTARDS! You won't get away with this!	0.dialogue-text.placeholder.11	dialogue-text
-I want all exits sealed. No one gets in or out. I'm going to pay the Commissioner a visit.	0.dialogue-text.placeholder.12	dialogue-text
-I know that FULL WELL, detective. Good night.	0.dialogue-text.placeholder.13	dialogue-text
-You heard the lady, copper. Time to say goodnight!	0.dialogue-text.placeholder.14	dialogue-text
-Strange noise... I'll ignore that.	0.dialogue-text.placeholder.15	dialogue-text
-You got it, Queen B.	0.dialogue-text.placeholder.16	dialogue-text
-Hello. I want to report the whereabouts of a notorious MASS MURDERER.	0.dialogue-text.placeholder.17	dialogue-text
-Mystery woman	0.dialogue-name.placeholder.18	dialogue-name
-Sure, lady. Who?	0.dialogue-text.placeholder.19	dialogue-text
-Me.	0.dialogue-text.placeholder.20	dialogue-text
-B-Balista!	0.dialogue-text.placeholder.22	dialogue-text
-Too many... too damn many!	0.dialogue-text.placeholder.23	dialogue-text
-Blood! Blood for BALISTA!	0.dialogue-text.placeholder.24	dialogue-text
-Yeah, yeah. Pipe it down!	0.dialogue-text.placeholder.25	dialogue-text
-At least the electricity is back online... but what the hell is going on with the security cameras?	0.dialogue-text.placeholder.26	dialogue-text
-Why did McBride bring in those rogue fighters anyway? MetroLaw will get them in the end - no point in fighting it.	0.dialogue-text.placeholder.27	dialogue-text
-Dunno. Wanted them for questioning or something. Or maybe he just wanted to stick it to those corporate slimeballs.	0.dialogue-text.placeholder.28	dialogue-text
-Serves 'em right! I don't know what McBride's up to, but he's good police. Not many of us left in this city...	0.dialogue-text.placeholder.29	dialogue-text
-Yeee-hawww!!!	0.dialogue-text.placeholder.30	dialogue-text
-Dead?!\r\n\r\nWhoever you are, you just pissed off the Hive Gang!	0.dialogue-text.placeholder.31	dialogue-text
-Block	0.text.placeholder.32	text
-EXIT	0.text.placeholder.34	text
-BALISTA\r\n  IS\r\nQUEEN	0.text.placeholder.35	text
-HIVE GANG	0.text.placeholder.36	text
-HELP	0.text.placeholder.37	text
-KILL\r\n'EM\r\nALL	0.text.placeholder.38	text
-KILL	0.text.placeholder.39	text
-HIVE GANG\r\n RULEZ!	0.text.placeholder.40	text
- RULEZ	0.text.placeholder.41	text
-DETENTION BLOCK A	0.text.placeholder.42	text
-Sunny City, 20XX\r\n\r\n	0.popup.placeholder.43	popup
-Sunny City, 20XX\r\n\r\n9th Precinct	0.popup.placeholder.44	popup
+No one gets out, by order of Balista!	diag.prison.guard.no.one.out	dialogue-text
+Mfgllll mfwrrrr! MFWRRRR!	diag.prison.inmate.gargle	dialogue-text
+Hey chief! I want my phone call!	diag.prison.inmate.phonecall	dialogue-text
+Hey, LOOK OUT!	diag.prison.inmate.lookout	dialogue-text
+W-what the hell's going ON out there?	diag.prison.cop.whats.going.on	dialogue-text
+Kill the prisoners too! We have all the warriors we need!	diag.prison.balista.kill.prisoners	dialogue-text
+God save us - it's the Hive Gang!	diag.prison.cop.hive.gang	dialogue-text
+HEY! Don't you guys have any respect for law and order?!	diag.prison.cop.respect.law	dialogue-text
+Nope.	diag.prison.hive.nope	dialogue-text
+Kill them.	diag.prison.hive.kill.them	dialogue-text
+You BASTARDS! You won't get away with this!	diag.prison.cop.bastards	dialogue-text
+I want all exits sealed. No one gets in or out. I'm going to pay the Commissioner a visit.	diag.prison.balista.seal.exits	dialogue-text
+I know that FULL WELL, detective. Good night.	diag.prison.balista.full.well	dialogue-text
+You heard the lady, copper. Time to say goodnight!	diag.prison.hive.goodnight.copper	dialogue-text
+Strange noise... I'll ignore that.	diag.prison.guard.ignore.noise	dialogue-text
+You got it, Queen B.	diag.prison.hive.queen.b	dialogue-text
+Hello. I want to report the whereabouts of a notorious MASS MURDERER.	diag.phone.mystery.report.murderer	dialogue-text
+Mystery woman	name.mystery.woman	dialogue-name
+Sure, lady. Who?	diag.phone.dispatch.who	dialogue-text
+Me.	diag.phone.mystery.me	dialogue-text
+B-Balista!	diag.phone.dispatch.balista	dialogue-text
+Too many... too damn many!	diag.prison.hive.too.many	dialogue-text
+Blood! Blood for BALISTA!	diag.prison.hive.blood.balista	dialogue-text
+Yeah, yeah. Pipe it down!	diag.prison.hive.pipe.down	dialogue-text
+At least the electricity is back online... but what the hell is going on with the security cameras?	diag.prison.cop.electricity.cameras	dialogue-text
+Why did McBride bring in those rogue fighters anyway? MetroLaw will get them in the end - no point in fighting it.	diag.prison.cop.mcbride.rogue	dialogue-text
+Dunno. Wanted them for questioning or something. Or maybe he just wanted to stick it to those corporate slimeballs.	diag.prison.cop2.corporate.slimeballs	dialogue-text
+Serves 'em right! I don't know what McBride's up to, but he's good police. Not many of us left in this city...	diag.prison.cop.good.police	dialogue-text
+Yeee-hawww!!!	diag.prison.hive.yeehaw	dialogue-text
+Dead?!\r\n\r\nWhoever you are, you just pissed off the Hive Gang!	diag.prison.hive.dead.pissed	dialogue-text
+Block	text.cell.block	text
+EXIT	text.sign.exit	text
+BALISTA\r\n  IS\r\nQUEEN	text.graf.balista.is.queen	text
+HIVE GANG	text.graf.hive.gang	text
+HELP	text.graf.help	text
+KILL\r\n'EM\r\nALL	text.graf.kill.em.all	text
+KILL	text.graf.kill	text
+HIVE GANG\r\n RULEZ!	text.graf.hive.rulez	text
+ RULEZ	text.graf.rulez	text
+DETENTION BLOCK A	text.sign.detention.a	text
+Sunny City, 20XX\r\n\r\n	popup.city.sunny.intro	popup
+Sunny City, 20XX\r\n\r\n9th Precinct	popup.city.9th.precinct	popup
+Hey Frank, can I borrow a buck? I wanna buy a soda from the machine.	diag.blockb.hive.borrow.buck	dialogue-text
+Buy a soda? BUY a soda?! You're a THUG! You have a BAT! Just SMASH the damn thing!	diag.blockb.frank.buy.soda.smash	dialogue-text
+Oooh... I dunno, that sounds like a lot of work... Easier to just...	diag.blockb.hive.lot.of.work	dialogue-text
+That's not the POINT! It's about... it's about PRINCI-PULLS! Where would the Hive Gang be if we started PAYING for things?	diag.blockb.frank.principles	dialogue-text
+Guess you're right Frank... It's important to have princi-pulls.	diag.blockb.hive.right.principles	dialogue-text
+PEOPLE these days...	diag.blockb.frank.people.days	dialogue-text
+Hey, you're those prisoners! How the hell did you survive? Nevermind. I see you're no friend of the Hive Gang. So let's help each other.	diag.blockb.mcbride.survive.help	dialogue-text
+There's this pilot guy - a prisoner like you. He's over in Detention Block D. If anyone can get you out of this mess, it's him. And I can get you to him - but first you need to help me kill Balista.	diag.blockb.mcbride.pilot.block.d	dialogue-text
+Crap, they're coming! Listen. There's an elevator through the door behind you. I'll try to to find another way upstairs. I'll meet you there - I hope.	diag.blockb.mcbride.elevator.behind	dialogue-text
+You can tell your men to relax, detective. We'll take it from here.	diag.roof.metrolaw.relax.detective	dialogue-text
+You mercenary scumbags! I wanted reinforcements - COPS, not a bunch of trigger-happy mercenaries!	diag.roof.hagan.scumbags	dialogue-text
+The mayor deems your department... INSUFFICIENT for the situation at hand. Leave this to the professionals.	diag.roof.metrolaw.insufficient	dialogue-text
+You... you... why I oughtta...!	diag.roof.hagan.oughtta	dialogue-text
+Alpha tango to zeta foxtrot. Deploy the Streetsweepers.	diag.roof.metrolaw.streetsweepers	dialogue-text
+The Precinct 9 police station was attacked today by the infamous Hive Gang. Their leader, a woman known only as Balista, is the self-crowned queen of disorganized crime in our fair city.	diag.news.attack.precinct9	dialogue-text
+Newsreader	name.newsreader	dialogue-name
+Balista's army of fanatical street thugs quickly took control of the station and have barricaded themselves inside. It's unclear whether anyone survived the barbaric onslaught!	diag.news.balista.army.barricaded	dialogue-text
+The mayor briefly commented on the attack, calling it "totally unfair." We will bring you live updates as this exciting story unfolds!	diag.news.mayor.unfair	dialogue-text
+The assault was probably a reckless act of revenge for a recent crime-fighing campaign led by Commissioner Hagan, in which several high-ranking members of the Hive Gang were killed.	diag.news.revenge.campaign	dialogue-text
+This is Balista speaking. This station is now under Hive Gang control. All exits are sealed. There is no escape.	diag.radio.balista.sealed.control	dialogue-text
+Balista	name.balista	dialogue-name
+To all my brave warriors, my faithful berserkers: crush the last remaining pockets of resistance! Bring me the head of Commissioner Hagan!	diag.radio.balista.head.hagan	dialogue-text
+Tonight there is but one law: Do what your Hate tells you!	diag.radio.balista.hate.law	dialogue-text
+Hey, you're that prisoner! How the hell did you survive? Nevermind. I see you're no friend of the Hive Gang. So let's help each other.	diag.blockb.mcbride.survive.again	dialogue-text
+Die! By order of Balista!	diag.blockb.hive.die.order	dialogue-text
+KILL ALL\r\n  COPS	text.graf.kill.all.cops	text
+BALISTA\r\n  ES\r\nREINA	text.graf.balista.es.reina	text
+BANDA HIVE	text.graf.banda.hive	text
+ ¡MOLA	text.graf.mola	text
+  NO\r\nMERCY	text.graf.no.mercy	text
+MATAR	text.graf.matar	text
+NO	text.graf.no	text
+SALIDA	text.sign.salida	text
+No! How did you get in? HELP!!	diag.commissioner.no.help	dialogue-text
+This just in: By order of the mayor, several MetroLaw units have been deployed to deal with the terrorists who seized control of the Precinct 9 police station earlier tonight.	diag.news.metrolaw.deployed	dialogue-text
+Many have pointed to tonight's events as further evidence of the obsoletion of the traditional police force, and that fully privatized law enforcement is surely the way of the future.	diag.news.obsoletion.police	dialogue-text
+This broadcast has been sponsored by MetroCorp: A Brighter Future for Sunny City. Good night!	diag.news.metrocorp.sponsored	dialogue-text
+...with more snow expected through the holiday weekend.	diag.news.snow.weekend	dialogue-text
+Heeelp! It's after me!	diag.commissioner.after.me	dialogue-text
+This is Balista speaking! The coward Hagan must give himself up!	diag.radio.balista.coward.hagan	dialogue-text
+Ha! Not likely!	diag.commissioner.not.likely	dialogue-text
+Furthermore, whoever brings me the commissioner - dead or alive - will be spared further violence!	diag.radio.balista.spared.violence	dialogue-text
+So, you'll turn my own men against me?! You evil, stinking, blood-crazy...	diag.commissioner.turn.men.against	dialogue-text
+That does it! NO ONE is getting in! No matter how they BEG!	diag.radio.balista.no.one.in	dialogue-text
+Woooh! Nice shot, Queen B!	diag.hive.nice.shot.queenb	dialogue-text
+Bloque	text.sign.bloque	text
+MATA\r\nLOS\r\nTODOS	text.graf.mata.los.todos	text
+ HIVE\r\nGANG\r\nRULEZ	text.graf.hive.gang.rulez2	text
+MERSY	text.graf.mersy	text
+OBEY	text.graf.obey	text
+QUEEN	text.graf.queen	text
+ANARKY	text.graf.anarky	text
+Okay, let'sh shee here. I'd rather have my trusty plane, but... thish'll do. If I can jusht find the ignition. Ah, here it ish.	diag.hangar.jeff.trusty.plane	dialogue-text
+Jeff	name.jeff	dialogue-name
+Hold them off while I work on thish thing!	diag.hangar.jeff.hold.off	dialogue-text
+She's alive! SHE'S ALIVE! Hop on board, guysh!	diag.hangar.jeff.she.alive	dialogue-text
+Don't let them get away! DO something!	diag.hangar.metrolaw.dont.escape	dialogue-text
+MetroCop	name.metrocop	dialogue-name
+Like what? We're already shooting at them. And we're all out of Streetsweepers.	diag.hangar.metrocop.like.what	dialogue-text
+If you're after my beer, it'sh all gone. These coppers confshi... consh... took it when they bushted me. They took my wings, the bashtards!	diag.hangar.jeff.beer.gone	dialogue-text
+Ok, you've convincshed me. Let'sh fly out of here!	diag.hangar.jeff.fly.out	dialogue-text
+Now I'm jusht waiting for thoshe thugsh to come back and finish me off. I don't feel like running any more. It'sh jusht one damn thing after another...	diag.hangar.jeff.waiting.thugs	dialogue-text
+Nope. Never gonna fly again... might ash well give up and jusht [grumbles incomprehensibly].	diag.hangar.jeff.never.fly	dialogue-text
+I mean what'sh the point if they can jusht... hmm... umm... ish that a...?	diag.hangar.jeff.whats.point	dialogue-text
+Save your excuses for the boss, you idiot!	diag.hangar.metrolaw.excuses.boss	dialogue-text
+Don't worry. I'm shteady ash a rock. And I'll FLY like one, jusht you wait.	diag.hangar.jeff.steady.rock	dialogue-text
+Thish thing ish old even by my standardsh... Where doesh thish part go? No, that'sh not it...	diag.hangar.jeff.old.part	dialogue-text
+Hmmm. Firsht engine is done, but the shecond engine could use some tweaking too. Hold them off a bit longer, guysh!	diag.hangar.jeff.first.engine.done	dialogue-text
+Dang it! Shomething'sh wrong with the enginesh. What numbshkull worked on thish? Gimme a minute to check under the hood here...	diag.hangar.jeff.wrong.engines	dialogue-text
+Don't let the assets escape!	diag.hangar.metrolaw.assets.escape	dialogue-text
+DEFEAT\r\nThe pilot was killed!	popup.fail.pilot.killed	popup
+MY LIFE FOR BALISTAAAAA!!!	diag.roof.hive.life.balista	dialogue-text
+...EMERGENCY!!! Abandon ship!	diag.roof.jeff.emergency.abandon	dialogue-text
+A shmooth getaway, all thingsh conshidered!	diag.roof.jeff.smooth.getaway	dialogue-text
+And kill that crazy broad for me, will ya?	diag.roof.mcbride.kill.broad	dialogue-text
+Move your assh!	diag.roof.hive.move.ass	dialogue-text
+Come on, let'sh get out of here!	diag.roof.jeff.get.out	dialogue-text
+I ain't gonna shtick around here all night!	diag.roof.jeff.stick.around	dialogue-text
+You won't believe how I shurvived. I'll tell you later!	diag.roof.jeff.survived.later	dialogue-text
+Sho, you're shtill alive! Get in!	diag.roof.jeff.still.alive	dialogue-text
+Give it up, Balista! Hagan is dead - you got what you wanted!	diag.roof.mcbride.give.up.hagan.dead	dialogue-text
+But why stop now when I'm having SO... MUCH... FUN?	diag.roof.balista.so.much.fun	dialogue-text
+Thanks for the help. You better get out of here. Far from Sunny City.	diag.roof.mcbride.thanks.help	dialogue-text
+Send me a postcard, will ya?	diag.roof.mcbride.postcard	dialogue-text
+You won't get rid of me that easily, pig-lovers!	diag.roof.balista.pig.lovers	dialogue-text
+You no hurt Queen Balista!	diag.roof.hive.no.hurt.queen	dialogue-text
+The name'sh Jeff, by the way. You know, thish could be the beginning of a beautiful...	diag.roof.jeff.beginning.beautiful	dialogue-text
+RUHAHAAAARRR HUARRRR!	diag.roof.berserker.roar	dialogue-text
+They don't give up, do they?\r\nMaybe it is that they don't know how.	diag.roof.spectator.dont.give.up	dialogue-text
+The Spectator	name.spectator	dialogue-name
+Now, I imagine some rest is in order. A moment's peace, perhaps, somewhere beyond those dark hills.	diag.roof.spectator.rest.peace	dialogue-text
+But the struggle between Order and Chaos is not yet determined. The balance will shift, and our heroes will return again and again to Sunny City.	diag.roof.spectator.struggle.order.chaos	dialogue-text
+'Til then, what's there to say but:\r\nWell played, ladies and gentlemen.	diag.roof.spectator.well.played	dialogue-text
