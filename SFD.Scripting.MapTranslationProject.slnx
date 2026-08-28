@@ -1,4 +1,4 @@
 <Solution>
-  <Project Path="Generator/Generator.fsproj" />
+  <Project Path="SFD.Scripting.MapTranslationProject.Generator/SFD.Scripting.MapTranslationProject.Generator.fsproj" />
   <Project Path="SFD.Scripting.MapTranslationProject.csproj" />
 </Solution>

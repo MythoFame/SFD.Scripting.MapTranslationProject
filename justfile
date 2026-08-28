@@ -5,7 +5,7 @@ generate-script:
     dotnet build SFD.Scripting.MapTranslationProject.csproj -t:GenerateScript
 
 generate-translations:
-    dotnet run --project Generator generate
+    dotnet run --project SFD.Scripting.MapTranslationProject.Generator generate
 
 validate-translations:
-    dotnet run --project Generator validate
+    dotnet run --project SFD.Scripting.MapTranslationProject.Generator validate

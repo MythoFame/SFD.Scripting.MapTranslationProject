@@ -17,7 +17,7 @@
             <Private>false</Private>
         </Reference>
 
-        <Compile Remove="Generator/**" />
+        <Compile Remove="SFD.Scripting.MapTranslationProject.Generator/**" />
     </ItemGroup>
 
     <Target Name="CheckSdk" BeforeTargets="ResolveReferences">
