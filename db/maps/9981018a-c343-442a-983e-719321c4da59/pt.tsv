@@ -1,0 +1,104 @@
+key	translation
+1.popup.intro	Algures em Sunny City\n20XX
+1.diag.radio.rise	Acorda e brilha, superlutadores! Há trabalho a fazer!
+1.diag.radio.feel	A sentir-te um pouco desorientado? Não te preocupes!
+1.diag.radio.relax	Apenas relaxa e faz o que vier naturalmente.
+1.diag.radio.hf	...e lembra-te: DIVERTE-TE!
+1.name.radio	Altifalante
+1.diag.radio.gj	Bom trabalho! Mas agora é que a luta a sério começa!
+1.diag.thug.kill	Mata esses gajos todos!
+1.diag.radio.final	Bom trabalho! Dá um respiro antes do próximo desafio.
+2.diag.meatgrinder.intro	Hurr hurr hurr...
+2.diag.grunt.react	Que raio! QUE RAIO!
+2.diag.meatgrinder.intro2	Mais 23 mortes e arranjo o meu próprio programa de culinária!
+2.diag.funnyman.intro1	Minhas senhoras e meus senhores, façam o favor de dar as boas-vindas ao palco...
+2.diag.funnyman.intro2	...AOS SUPERLUTADORES!
+2.diag.funnyman.intro3	Bom trabalho lá fora! Vocês trataram daqueles rufias!
+2.diag.funnyman.intro4	Agora é hora de um merecido descanso. Doces sonhos!
+2.diag.funnyman.intro5	É tudo, pessoal! MAS não se esqueçam de sintonizar amanhã — é quando a luta A SÉRIO começa.
+3.diag.grunt.intro	Não nos podem tratar assim!
+3.diag.metro.intro.1	Ah é, saco de carne?
+3.diag.metro.intro.2	Vá lá, sacos de carne! É hora do espetáculo!
+3.diag.metro.intro.3	Hora do espetáculo!\nHee hee!
+3.diag.metro.intro.4	Vá lá! O espetáculo está a começar e tu és a grande estrela.
+3.diag.metro.intro.5	Grande estrela!\nHee hee!
+3.diag.metro.intro.6	Não queres acabar como estes pobres coitados. Parece que lhes deu medo de palco, he he!
+3.diag.metro.intro.7	Medo de palco!\nHee hee!
+3.diag.metro.intro.8	Vá lá! O público não morde! He he!
+3.diag.metro.intro.9	Não morde!\nHee hee!
+3.diag.metro.intro.10	Bem, espertinho, este é o teu último aviso! Vou contar até dez e é melhor te ires antes de eu acabar!
+3.diag.metro.intro.11	Acabou!\nHee hee!
+3.diag.metro.intro.countdown.1	Um!
+3.diag.metro.intro.countdown.2	Dois!
+3.diag.metro.intro.countdown.3	Três!
+3.diag.metro.intro.countdown.4	Três!\nHee!
+3.diag.metro.intro.countdown.5	Cinco!
+3.diag.metro.intro.countdown.6	Sete, oito!
+3.diag.metro.intro.countdown.7	Hee hee!
+3.diag.metro.intro.countdown.8	Nove!
+3.diag.metro.intro.countdown.9	Olha só!
+3.diag.metro.intro.countdown.10	DEZ!
+3.diag.metro.intro.countdown.11	HEE HEE HEE!
+3.diag.funnyman.intro.1	É chegado o momento, minhas senhoras e meus senhores, da tão aguardada final de temporada de Superfighters Live!
+3.diag.funnyman.intro.2	Desta vez sem caçadores — só a nata: superlutadores turbinados e loucos por batalha, diretos dos aquários!
+3.diag.funnyman.intro.3	Que equipa sairá vitoriosa no Poço? Hora de descobrir!
+3.diag.funnyman.intro.4	Que comece a luta!
+3.diag.funnyman.brawl.1	Que luta! Minhas senhoras e meus senhores...
+3.diag.funnyman.brawl.2	A Equipa Azul é vitoriosa!
+3.diag.funnyman.brawl.3	Agora, vamos ver como se safam com poder de fogo a sério! Está na hora de...
+3.diag.funnyman.brawl.4	...O ÚLTIMO CONFRONTO!
+3.diag.tech	Isso vai resolver!
+3.diag.funnyman.exit.1	O que foi...?!
+3.diag.funnyman.grunt	Hum... chefe?
+3.diag.funnyman.exit.2	Idiotas! Se aquele vidro não fosse perfeitamente indestrutível...
+3.diag.funnyman.exit.3	Hum, tudo parte do espetáculo, pessoal! Voltamos já a seguir a estas mensagens!
+3.diag.funnyman.brawl.5	Incrível! A Equipa Azul continua de pé! Força nisso!
+3.diag.funnyman.exit.4	Guardas! PAREM-NOS!
+4.diag.funnyman.intro.1	Vocês superlutadores — porque é que não jogam pelas regras?
+4.diag.funnyman.intro.2	Tenho uma boa carreira e não vou deixar que idiotas de laboratório estraguem isto!
+4.diag.funnyman.intro.3	NÃO VOU VOLTAR À HORA INFANTIL!!!
+4.diag.funnyman.hurt.1	Isso DOEU! Vou adorar matar-te!
+4.diag.funnyman.hurt.2	Seus ingratos! O que faziam sem nós?
+4.diag.funnyman.hurt.3	Foste uma ESTRELA! Deste ao povo o que queria! Sem isso, o que és? Apenas brinquedos partidos e inúteis!
+4.diag.funnyman.hurt.4	Não veem que fazemos um serviço público? Mantemos a ordem! Sem Superfighters, haveria CAOS!
+4.diag.funnyman.hurt.5	Matar-me não vai mudar nada! Sou só a fachada... o tipo do fato chique. Posso ser substituído... mas não vou deixar isso acontecer!
+4.diag.funnyman.hurt.6	O que estão a tentar fazer, hã? Mesmo que destruam o programa, não conseguem explodir o estúdio inteiro!
+4.diag.funnyman.hurt.7	Vêm mais soldados! Estão presos aqui! É melhor renderem-se!
+4.diag.funnyman.death.1	Vocês... não... ganharam!...
+4.diag.funnyman.death.2	Urgh — toda a gente é crítica...
+4.diag.funnyman.death.3	Cortinas... abaixo...
+4.diag.speaker	Entendido, alfa 3. Todas as unidades destacadas, aproximamo-nos do alvo.
+5.name.pilot	Piloto
+5.diag.pilot.1	Estamos a ser atingidos!
+5.diag.pilot.2	Droga!
+5.diag.pilot.3	Estamos a retirar!
+5.diag.pilot.4	Argh!
+5.diag.pilot.5	Eu não me inscrevi para isto!
+5.diag.pilot.6	Que raio foi aquilo!
+5.name.shadow	Figura sombria
+5.diag.shadow.top.1	Vêm mais soldados. É melhor continuares a andar.
+5.diag.shadow.top.2	Não há saída a não ser para cima.
+5.diag.shadow.top.3	Estás sem tempo. Eles estão a chegar.
+5.diag.shadow.top.4	A hora está a ficar tarde.
+5.diag.shadow.top.5	Esta é a tua paragem.
+5.diag.shadow.brief.1	Noite dura, hã?
+5.diag.shadow.brief.2	Tenho a certeza que percebes que não vais sair deste edifício. Todas as saídas estão cortadas e vêm mais soldados.
+5.diag.shadow.brief.3	Mas supõe que alguém derrubasse a torre de transmissão. Supõe que alguém parasse o sinal...
+5.diag.shadow.brief.4	O que fariam as pessoas, pergunto-me, sem o seu precioso entretenimento?
+5.diag.shadow.brief.5	É algo sobre que refletir, suponho.
+2.diag.thug.kill	Lembrem-se - são eles ou nós!
+2.diag.grunt.intro	Ali - acabem com eles!
+2.diag.meatgrinder.hurt	HURR HURR HURR!
+3.diag.funnyman.exit.5	Acabou para vocês, superlutadores! Nunca mais vão trabalhar nesta cidade!
+5.diag.kid.1	Extra, extra! Estúdio de TV em ruínas! Querido apresentador presumivelmente morto! Programa número um cancelado por tempo indeterminado! Leiam tudo! Só no Sunny City Times!
+5.diag.agent.1	Corpos?
+5.diag.general.1	Nenhum encontrado, senhor. A própria torre caiu sobre três quarteirões. As unidades estão a caminho. É uma maldita confusão, senhor.
+5.diag.general.2	Espero bem que... PROTEJAS os corpos. Há muitos que gostariam de pôr as mãos nesses espécimes.
+5.diag.agent.2	Oooooh.\n...Sim, suponho que sim.
+5.diag.general.3	Não DESSE jeito, sargento.
+5.diag.kid.2	Extra, extra! Novos desenvolvimentos! Os culpados ainda podem estar à solta! Caçada em curso em...
+5.diag.agent.3	Fora daqui, miúdo!
+5.diag.general.4	Parem as máquinas!
+5.diag.general.5	Esta cidade inteira está a enlouquecer. E vai piorar. Sinto-o.
+5.diag.agent.4	Amém.
+5.diag.agent.5	Então, queres fazer algo depois?
