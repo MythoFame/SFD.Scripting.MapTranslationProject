@@ -4,6 +4,7 @@ type StringKind =
     | DialogueText
     | DialogueName
     | Text
+    | Popup
 
 module Kind =
     let tag kind =
@@ -11,12 +12,14 @@ module Kind =
         | DialogueText -> "dialogue-text"
         | DialogueName -> "dialogue-name"
         | Text -> "text"
+        | Popup -> "popup"
 
     let tryParse value =
         match value with
         | "dialogue-text" -> Some DialogueText
         | "dialogue-name" -> Some DialogueName
         | "text" -> Some Text
+        | "popup" -> Some Popup
         | _ -> None
 
 type StringEntry =

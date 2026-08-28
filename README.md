@@ -10,7 +10,7 @@ Community-driven, open-database translations for every Superfighters Deluxe map
 
 </div>
 
-A script extension that lets you play any Superfighters Deluxe map in your language. It automatically replaces dialogue lines, speaker names, and in-world text objects with translations from an open, versioned database. No map editing required.
+A script extension that lets you play any Superfighters Deluxe map in your language. It automatically replaces dialogue lines, speaker names, in-world text objects, and popup messages with translations from an open, versioned database. No map editing required.
 
 Each map is identified by its original GUID, and translations are bundled directly into the script at build time via a code generator. Pick a language once and the script applies it whenever you load a translated map.
 
@@ -36,7 +36,7 @@ db/
     └── <lang>.csv                  # key,translation    (one per language, blanks = untranslated)
 ```
 
-Supported `kind` values are `dialogue-text`, `dialogue-name`, and `text`. Any other file in `db/maps/<GUID>/` (e.g. README.md) is silently ignored.
+Supported `kind` values are `dialogue-text`, `dialogue-name`, `text`, and `popup`. Any other file in `db/maps/<GUID>/` (e.g. README.md) is silently ignored.
 
 ### Adding a new map or string
 

@@ -21,6 +21,7 @@ public partial class GameScript
         int dialogueTexts = 0;
         int dialogueNames = 0;
         int texts = 0;
+        int popups = 0;
         int unmatched = 0;
 
         foreach (IObjectDialogueTrigger dialogueTrigger in Game.GetObjects<IObjectDialogueTrigger>())
@@ -68,9 +69,27 @@ public partial class GameScript
             }
         }
 
+        foreach (IObjectPopupMessageTrigger popupTrigger in Game.GetObjects<IObjectPopupMessageTrigger>())
+        {
+            string message = popupTrigger.GetPopupMessage();
+
+            if (!string.IsNullOrEmpty(message))
+            {
+                if (TranslationHashing.TryTranslate(table, TranslationHashing.PopupKind, message, out string translated))
+                {
+                    popupTrigger.SetPopupMessage(translated);
+                    popups++;
+                }
+                else
+                {
+                    unmatched++;
+                }
+            }
+        }
+
         Game.WriteToConsoleF(
-            "[MapTranslations] {0}: {1} dialogue texts, {2} dialogue names, {3} texts applied ({4} unmatched).",
-            Game.MapOriginalGUID, LanguageKey, dialogueTexts, dialogueNames, texts, unmatched);
+            "[MapTranslations] {0}: {1} dialogue texts, {2} dialogue names, {3} texts, {4} popups applied ({5} unmatched).",
+            Game.MapOriginalGUID, LanguageKey, dialogueTexts, dialogueNames, texts, popups, unmatched);
     }
 
     /// <summary>
@@ -107,6 +126,7 @@ public partial class GameScript
         public const string DialogueTextKind = "dialogue-text";
         public const string DialogueNameKind = "dialogue-name";
         public const string TextKind = "text";
+        public const string PopupKind = "popup";
 
         public static ulong Compute(string kindTag, string text)
         {
