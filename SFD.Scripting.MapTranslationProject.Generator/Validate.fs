@@ -17,6 +17,9 @@ let private placeholderTokens (value: string) =
 /// Dialogue name boxes can only display so much text.
 let private maxDialogueNameLength = 16
 
+/// Dialogue lines longer than this overflow the in-game dialogue box.
+let private maxDialogueTextLength = 200
+
 /// Runs all advisory checks over a successfully loaded database.
 /// Returns coverage info lines, warnings, and errors.
 let run (db: Database) : string list * string list * string list =
@@ -71,6 +74,12 @@ let run (db: Database) : string list * string list * string list =
                             errors.Add(
                                 $"{map.Guid} {language} '{kv.Key}': "
                                 + $"dialogue name exceeds {maxDialogueNameLength} characters ({translationLength})"
+                            )
+
+                        if entry.Kind = DialogueText && translationLength > maxDialogueTextLength then
+                            errors.Add(
+                                $"{map.Guid} {language} '{kv.Key}': "
+                                + $"dialogue text exceeds {maxDialogueTextLength} characters ({translationLength})"
                             )
 
                         if float translationLength > float originalLength * 1.5
