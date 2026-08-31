@@ -1,0 +1,13 @@
+original	key	kind
+Your men should learn not to point their guns at a fellow officer. We're Detectives McBride and Santana, SCPD. We'll take it from here.	diag.mcbride.fellow.officer.scpd.take.over	dialogue-text
+Alright men, cuff these meatbags quickly before they wake up.	diag.metro.cuff.meatbags.before.wake	dialogue-text
+Scram, small-timers! These are the meatbags who blew up the TV station. They're government property.	diag.metro.scram.meatbags.government.property	dialogue-text
+Ah, but this is still an SCPD precinct. I'm sorry, officer. If you want your prize, you'll have to go through the proper channels.	diag.mcbride.scpd.precinct.proper.channels	dialogue-text
+This isn't over, coppers! You guys are history! MetroLaw is the future!	diag.metro.coppers.history.metrolaw.future	dialogue-text
+Help me cuff 'em, Santana. We're going downtown.	diag.mcbride.cuff.santana.downtown	dialogue-text
+I'm starting to think the commissioner is right... You're a loose cannon, Johnny!	diag.santana.commissioner.loose.cannon	dialogue-text
+Attention superfighters! You are surrounded! Surrender now, and you will receive MetroLaw's award-winning professional care...	diag.speaker.surrounded.metrolaw.care	dialogue-text
+Speaker Voice	name.speaker.voice	dialogue-name
+Otherwise, you will be charged in full for any further damage to culturally significant buildings during your arrest...	diag.speaker.charged.damage.buildings	dialogue-text
+By resisting arrest, you agree to the terms and conditions as I have presented them. OK sergeant, you may proceed with the arrest.	diag.speaker.terms.conditions.arrest	dialogue-text
+B-buh- WHAT!	diag.metro.buh.what	dialogue-text
