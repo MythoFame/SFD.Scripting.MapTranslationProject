@@ -43,6 +43,17 @@ public partial class GameScript : GameScriptInterfaceExtended
 
     public static void TranslationDump(UserMessageCallbackArgs args)
     {
+        if (!string.IsNullOrEmpty(LanguageKey))
+        {
+            // With a language active the map texts are already replaced; a dump
+            // would capture translations as if they were originals.
+            Game.ShowChatMessage(
+                "A translation language is active! Reset it with /LANG original before dumping.",
+                Color.Red, args.User.UserIdentifier);
+
+            return;
+        }
+
         IScriptStorage storage = Game.GetSharedStorage("translationdump");
 
         storage.Clear(); // drop stale rows from a previous, larger dump
