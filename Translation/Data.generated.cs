@@ -152,6 +152,70 @@ public partial class GameScript : GameScriptInterfaceExtended
                     [0xfe1e16ae5a0d8fdbUL] = "¿Por qué trajo McBride a esos luchadores renegados? MetroLaw acabará con ellos, no tiene sentido resistirse.",
                 },
             },
+            ["363e25b5-c239-4a2e-bfb8-837535807f18"] = new()
+            {
+                ["es"] = new()
+                {
+                    [0x00c828920feb30a9UL] = "No pareces nazi... ¿cómo demonios has salido con vida?",
+                    [0x00f894c753526ecaUL] = "Ah, hijos míos... habéis matado al pobre Kriegbär Nº2.",
+                    [0x04ea71f543f7a181UL] = "¡Pero también mi mayor ERROR! ¡Es hora de corregir ese error! ¡Frau Sturmbannführer! ¡Traédmelos!",
+                    [0x130cb8e004b1746fUL] = "O Tannenbaum, o Tannenbaum,\nwie treu sind deine Blätter!",
+                    [0x16c94d4cdbfbd83aUL] = "¡Nein, nein, nein! ¡Otra vez tarde!",
+                    [0x1ffaba68dba5eb7dUL] = "No importa, me lo cuentas luego. ¡Tengo órdenes de sacaros de aquí cagando leches!",
+                    [0x263ef99ee3dd3bdfUL] = "(Y pronto el mismísimo Führer se acobardará ante Fritzliebe! ¡Ja-ja!)",
+                    [0x266ca9e1237fd940UL] = "¿Cómo dice, doctor?",
+                    [0x3702712331c60bbbUL] = "¡NEIN! ¡No podéis destruir el árbol de Navidad!",
+                    [0x37d4da79f91ea69dUL] = "...¡pero también tengo muchos avances MECÁNICOS que enseñarles!",
+                    [0x399d69478283bf0aUL] = "¡Ah, pobre Kriegbär Nº2! Era una de mis criaturas favoritas. En fin... me rindo. ¡Entrad y discutamos los términos de mi rendición!",
+                    [0x3d0b9534cd0767daUL] = "Du grünst nicht nur zur Sommerzeit,\nNein auch im Winter, wenn es schneit!",
+                    [0x3f57a8067643aaf1UL] = "¡¡¡Atentado!!!",
+                    [0x46ee9a6b83e2eaf5UL] = "¡Otra vez, desde el principio! ¡Y con más sentimiento esta vez!",
+                    [0x4b729df370265d0aUL] = "¡Pero también mi mayor ERROR! ¡Es hora de corregir ese error! ¡Frau Sturmbannführer! ¡Trae al espécimen!",
+                    [0x4bd699fb74d17592UL] = "¡Esto es injusto!",
+                    [0x50b1af47c674d007UL] = "¡Buenas noches, Dr. Fritzliebe! ¿Cómo avanza el proyecto Überkämpfer?",
+                    [0x537f76c41d40d6cbUL] = "¡Mein Gott! ¡Deténganlos!",
+                    [0x5712908027cd5023UL] = "No parecéis nazis... ¿cómo demonios habéis salido con vida?",
+                    [0x5767d170e5d4e177UL] = "¡He dicho, HEIL HITLER!",
+                    [0x593a7092b87f94baUL] = "¡Verdammt! ¡Un ataque aéreo aliado!",
+                    [0x5b1a6ebf6ea7465eUL] = "¡Excelentemente, Herr Sturmbannführer! ¡Los prisioneros están respondiendo de maravilla a la fórmula! ¡Pronto el Führer tendrá su ejército imparable!",
+                    [0x6330a806d40f3cdcUL] = "¡¡¡HNNNARRRRRRRHHH!!!",
+                    [0x63b1bc586efa968cUL] = "La BIOQUÍMICA es mi especialidad, es cierto...",
+                    [0x6f47bc553da9b8e5UL] = "*cof* ¡Arrrrgh... ¡Schweinhunden! ¡Me habéis matado... pero no saldréis de aquí con vida!",
+                    [0x6ff7c93100bf1649UL] = "¡Tendré que desmontarte y empezar de nuevo! ¡Y esta vez serás perfecto!",
+                    [0x7c20e94fb4650a48UL] = "Kriegbär Nº2",
+                    [0x81e08fcf3b26b2c0UL] = "¡Ah, hijo mío! ¡Has llegado tan lejos! ¡Qué orgulloso estoy! ¡Eres realmente mi mayor TRIUNFO científico!",
+                    [0x829963066c214aaaUL] = "Dr. Fritzliebe",
+                    [0x8ea04a9910d7a8abUL] = "¡¡¡RARRRRRRRRH!!",
+                    [0x99f616758a5083a7UL] = "¡Ja! ¡Ya lo veremos!",
+                    [0x9e76ca2b1b590009UL] = "¡Hm! ¿El Kriegbär ha escapado? ¡Eso no pinta bien para ti, Lieblings!",
+                    [0x9f031c4016299ccaUL] = "Si lo que he oído es cierto, podrías ser justo lo que necesitamos para ganar esta guerra...",
+                    [0xa00cfe8c3f89d67eUL] = "Oficial SS",
+                    [0xa0af763a31a874f1UL] = "Ya está, chicos. Misión cumplida.",
+                    [0xab049533d0c82bb7UL] = "¡HEIL HITLER!",
+                    [0xb20893ef0887644aUL] = "¡Insolentes!",
+                    [0xbe70d440b4b5571fUL] = "¡Morid ahora!",
+                    [0xc016c3d70a417178UL] = "¡Hm! ¿El Kriegbär ha escapado? ¡Eso no pinta bien para ti, amigo mío!",
+                    [0xc7a4c28cb3b0df2eUL] = "¡Es hora de corregir ese error! Os desmontaré y empezaré de nuevo. Y el próximo modelo será mejor. OBEDECERÁ.",
+                    [0xcdd6675c1b199d86UL] = "¡Alguien sale, señor!",
+                    [0xce98a25209ef4e14UL] = "Coro",
+                    [0xd1463da2413c9109UL] = "Castillo Sonnenfreude\nEn algún lugar de Austria\nDiciembre de 1943",
+                    [0xd14f14ca876a1d5dUL] = "¡Ah, hijos! ¡Habéis llegado tan lejos! ¡Qué orgulloso estoy! ¡Sois realmente mi mayor TRIUNFO científico!",
+                    [0xdbf2762283f9e73dUL] = "¡No teman! ¡Mi sistema antiaéreo se encargará de ellos en breve!",
+                    [0xe81aa415f0160f15UL] = "Aun así... estos viejos sótanos están en mal estado. ¡Raus!",
+                    [0xf499c110f6abe42bUL] = "¡Sois mi mayor triunfo... pero también mi mayor error!",
+                    [0xf682ec890cd8dea9UL] = "¡Verdammt! ¿Dónde está el ascensor?",
+                },
+            },
+            ["52ac9704-61c1-4227-bfd4-9196b81d4f7c"] = new()
+            {
+                ["es"] = new()
+                {
+                    [0x63e3b460a0674fcaUL] = "¡El Equipo Azul está que ARDE esta noche! Pero veamos cómo se las apañan con potencia de verdad. ¡Es hora de...",
+                    [0x672b08acfa590a83UL] = "¡Damas y caballeros, la cosa se pone caliente aquí en los estudios de SFTV!",
+                    [0x8593736b30e839c0UL] = "...¡LA ÚLTIMA BATALLA!",
+                    [0xd6e0acc5ae941713UL] = "Funnyman",
+                },
+            },
             ["9981018a-c343-442a-983e-719321c4da59"] = new()
             {
                 ["es"] = new()
@@ -259,6 +323,35 @@ public partial class GameScript : GameScriptInterfaceExtended
                     [0xfc2d3c1ce47a805eUL] = "¡Nos retiramos!",
                     [0xfdceebfbb5ed9ec2UL] = "¡Vienen más soldados! ¡Están atrapados aquí! ¡Más les vale rendirse!",
                     [0xfe9e91d49ea5398fUL] = "Esta es tu parada.",
+                },
+            },
+            ["a4244c9d-2ef2-40d7-acb2-dcf1579b5056"] = new()
+            {
+                ["es"] = new()
+                {
+                    [0x355f12fe77de5784UL] = "¡Esto no ha terminado, maderos! ¡Estáis acabados! ¡MetroLaw es el futuro!",
+                    [0x417cd86cc0ca6c17UL] = "De lo contrario, se les cobrará íntegramente cualquier daño adicional a edificios de importancia cultural durante su arresto...",
+                    [0x425ee91164382a0aUL] = "Sus hombres deberían aprender a no apuntar con sus armas a un colega. Somos los detectives McBride y Santana, SCPD. Nos encargamos nosotros.",
+                    [0x466aae9dccce80d5UL] = "Ah, pero esto sigue siendo una comisaría de SCPD. Lo siento, agente. Si quiere su premio, tendrá que seguir los cauces oficiales.",
+                    [0x8050359da2050ad6UL] = "Ayúdame a esposarlos, Santana. Nos vamos a la comisaría.",
+                    [0x8422c9c595e7687cUL] = "¡¿C-cómo QUÉ?!",
+                    [0xa42e1ea0d7d127c8UL] = "Vale, chicos, esposad a estos sacos de carne rápido antes de que despierten.",
+                    [0xb9158363e1220395UL] = "¡Largaos, mindundis! Estos son los sacos de carne que volaron la emisora de TV. Son propiedad del gobierno.",
+                    [0xc1e47df7de9703a5UL] = "Al resistirse al arresto, aceptan los términos y condiciones tal como los he presentado. De acuerdo sargento, puede proceder con el arresto.",
+                    [0xc8814e7e4c55afbdUL] = "Voz del Altavoz",
+                    [0xddc4eae441a43c65UL] = "Empiezo a pensar que el comisario tiene razón... ¡Eres una bala perdida, Johnny!",
+                    [0xe14aefb8dc626bcbUL] = "¡Atención, superluchadores! ¡Están rodeados! Ríndanse ahora y recibirán el premiado cuidado profesional de MetroLaw...",
+                },
+            },
+            ["cb000516-a024-42fd-85e5-a041817a4723"] = new()
+            {
+                ["es"] = new()
+                {
+                    [0x07e18ce308582bf0UL] = "¿Cerebroooos...?",
+                    [0x626cdf2178e4e3efUL] = "¡N-n-no! ¡¡¡AAAAARGH!!!",
+                    [0x9068cf7da320c183UL] = "¡Socorro! ¿Hay alguien ahí?",
+                    [0xa5dfdcf88e6e8a61UL] = "¡Oh Dios, ya vienen!",
+                    [0xfef9afddb45746d8UL] = "Zombi",
                 },
             },
         };
