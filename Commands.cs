@@ -4,6 +4,8 @@ namespace SFD.Scripting.MapTranslationProject;
 
 public partial class GameScript : GameScriptInterfaceExtended
 {
+    private static readonly Vector2 _max = new(float.MaxValue);
+
     public static void SetLanguageKey(UserMessageCallbackArgs args)
     {
         int uid = args.User.UserIdentifier;
@@ -97,6 +99,16 @@ public partial class GameScript : GameScriptInterfaceExtended
     {
         if (obj == null || string.IsNullOrWhiteSpace(obj.Name)) return "";
 
-        return $"{obj.Name.Replace(' ', '_').ToLowerInvariant()}.";
+        string name = obj.Name;
+
+        if (obj is IObjectPlayerSpawnTrigger objectPlayerSpawnTrigger) {
+            IPlayer player = objectPlayerSpawnTrigger.CreatePlayer(_max);
+
+            name = player.Name;
+
+            player.Remove();
+        }
+
+        return $"{name.Replace(' ', '_').ToLowerInvariant()}.";
     }
 }
