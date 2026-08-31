@@ -1,3 +1,4 @@
 [
-    { "code": "es", "displayName": "Español" }
+    { "code": "es", "displayName": "Español" },
+    { "code": "ru", "displayName": "Русский" }
 ]
