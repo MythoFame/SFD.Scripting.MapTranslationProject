@@ -93,6 +93,8 @@ public partial class GameScript : GameScriptInterfaceExtended
         }
 
         Game.ShowChatMessage("Created dump!", Color.Green, args.User.UserIdentifier);
+
+        Game.SetGameOver();
     }
 
     private static string ObjectKey(IObject obj)
