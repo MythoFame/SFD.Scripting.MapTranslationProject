@@ -1,0 +1,129 @@
+original	key	kind
+No one gets out, by order of Balista!	punk.no_one_gets_out_by_order_of_balista	dialogue-text
+Mfgllll mfwrrrr! MFWRRRR!	firebug.growl_mfgllll	dialogue-text
+Hey chief! I want my phone call!	prisoner.want_phone_call	dialogue-text
+Hey, LOOK OUT!	prisoner.look_out	dialogue-text
+W-what the hell's going ON out there?	prisoner.what_hell_going_on	dialogue-text
+Kill the prisoners too! We have all the warriors we need!	punk_leader.kill_prisoners_too	dialogue-text
+God save us - it's the Hive Gang!	prisoner.god_save_us_hive_gang	dialogue-text
+HEY! Don't you guys have any respect for law and order?!	santana.respect_law_and_order	dialogue-text
+Nope.	bobby.nope	dialogue-text
+Kill them.	balista.kill_them	dialogue-text
+You BASTARDS! You won't get away with this!	johnny.you_bastards	dialogue-text
+I want all exits sealed. No one gets in or out. I'm going to pay the Commissioner a visit.	balista.seal_all_exits_visit_commissioner	dialogue-text
+I know that FULL WELL, detective. Good night.	balista.full_well_detective_good_night	dialogue-text
+You heard the lady, copper. Time to say goodnight!	bobby.heard_lady_copper_goodnight	dialogue-text
+Strange noise... I'll ignore that.	grub.strange_noise_ignore	dialogue-text
+You got it, Queen B.	bobby.you_got_it_queen_b	dialogue-text
+Hello. I want to report the whereabouts of a notorious MASS MURDERER.	balista.report_mass_murderer	dialogue-text
+Mystery woman	name.mystery_woman	dialogue-name
+Sure, lady. Who?	receptionist.sure_lady_who	dialogue-text
+Me.	balista.me	dialogue-text
+B-Balista!	receptionist.b_balista	dialogue-text
+Too many... too damn many!	officer.too_many_damn_many	dialogue-text
+Blood! Blood for BALISTA!	com.blood_for_balista	dialogue-text
+Yeah, yeah. Pipe it down!	officer.pipe_it_down	dialogue-text
+At least the electricity is back online... but what the hell is going on with the security cameras?	receptionist.electricity_back_cameras	dialogue-text
+Why did McBride bring in those rogue fighters anyway? MetroLaw will get them in the end - no point in fighting it.	officer.why_mcbride_brought_rogue_fighters	dialogue-text
+Dunno. Wanted them for questioning or something. Or maybe he just wanted to stick it to those corporate slimeballs.	officer.wanted_for_questioning_corporate_slime	dialogue-text
+Serves 'em right! I don't know what McBride's up to, but he's good police. Not many of us left in this city...	officer.serves_em_right_good_police	dialogue-text
+Yeee-hawww!!!	punk.yeee_hawww	dialogue-text
+Dead?!\r\n\r\nWhoever you are, you just pissed off the Hive Gang!	punk_leader.dead_pissed_off_hive_gang	dialogue-text
+Block	text.block	text
+EXIT	text.exit	text
+BALISTA\r\n  IS\r\nQUEEN	text.balista_is_queen	text
+HIVE GANG	text.hive_gang	text
+HELP	text.help	text
+KILL\r\n'EM\r\nALL	text.kill_em_all	text
+KILL	text.kill	text
+HIVE GANG\r\n RULEZ!	text.hive_gang_rulez	text
+ RULEZ	text.rulez	text
+DETENTION BLOCK A	text.detention_block_a	text
+Sunny City, 20XX\r\n\r\n	popup.sunny_city_20xx	popup
+Sunny City, 20XX\r\n\r\n9th Precinct	popup.sunny_city_9th_precinct	popup
+Hey Frank, can I borrow a buck? I wanna buy a soda from the machine.	jug.borrow_buck_soda	dialogue-text
+Buy a soda? BUY a soda?! You're a THUG! You have a BAT! Just SMASH the damn thing!	frank.buy_soda_thug_bat_smash	dialogue-text
+Oooh... I dunno, that sounds like a lot of work... Easier to just...	jug.sounds_like_lot_of_work	dialogue-text
+That's not the POINT! It's about... it's about PRINCI-PULLS! Where would the Hive Gang be if we started PAYING for things?	frank.not_point_principles_paying	dialogue-text
+Guess you're right Frank... It's important to have princi-pulls.	jug.right_frank_principles	dialogue-text
+PEOPLE these days...	frank.people_these_days	dialogue-text
+Hey, you're those prisoners! How the hell did you survive? Nevermind. I see you're no friend of the Hive Gang. So let's help each other.	johnny.youre_those_prisoners_survive_help	dialogue-text
+There's this pilot guy - a prisoner like you. He's over in Detention Block D. If anyone can get you out of this mess, it's him. And I can get you to him - but first you need to help me kill Balista.	johnny.pilot_detention_block_d_kill_balista	dialogue-text
+Crap, they're coming! Listen. There's an elevator through the door behind you. I'll try to to find another way upstairs. I'll meet you there - I hope.	johnny.crap_coming_elevator_behind	dialogue-text
+You can tell your men to relax, detective. We'll take it from here.	agent.tell_men_relax_take_over	dialogue-text
+You mercenary scumbags! I wanted reinforcements - COPS, not a bunch of trigger-happy mercenaries!	detective_kong.mercenary_scumbags_wanted_cops	dialogue-text
+The mayor deems your department... INSUFFICIENT for the situation at hand. Leave this to the professionals.	agent.mayor_deems_insufficient_professionals	dialogue-text
+You... you... why I oughtta...!	detective_kong.you_oughta	dialogue-text
+Alpha tango to zeta foxtrot. Deploy the Streetsweepers.	agent.alpha_tango_deploy_streetsweepers	dialogue-text
+The Precinct 9 police station was attacked today by the infamous Hive Gang. Their leader, a woman known only as Balista, is the self-crowned queen of disorganized crime in our fair city.	bgradio.precinct9_attacked_by_hive_gang	dialogue-text
+Newsreader	name.newsreader	dialogue-name
+Balista's army of fanatical street thugs quickly took control of the station and have barricaded themselves inside. It's unclear whether anyone survived the barbaric onslaught!	bgradio.balista_army_took_control_station	dialogue-text
+The mayor briefly commented on the attack, calling it "totally unfair." We will bring you live updates as this exciting story unfolds!	bgradio.mayor_called_totally_unfair	dialogue-text
+The assault was probably a reckless act of revenge for a recent crime-fighing campaign led by Commissioner Hagan, in which several high-ranking members of the Hive Gang were killed.	bgradio.assault_revenge_crime_campaign_hagan	dialogue-text
+This is Balista speaking. This station is now under Hive Gang control. All exits are sealed. There is no escape.	bgspeaker.balista_station_under_hive_control_no_escape	dialogue-text
+Balista	name.balista	dialogue-name
+To all my brave warriors, my faithful berserkers: crush the last remaining pockets of resistance! Bring me the head of Commissioner Hagan!	bgspeaker.crush_pockets_resistance_head_of_hagan	dialogue-text
+Tonight there is but one law: Do what your Hate tells you!	bgspeaker.one_law_do_what_hate_tells	dialogue-text
+Hey, you're that prisoner! How the hell did you survive? Nevermind. I see you're no friend of the Hive Gang. So let's help each other.	johnny.youre_that_prisoner_survive_help	dialogue-text
+Die! By order of Balista!	punk_leader.die_by_order_of_balista	dialogue-text
+KILL ALL\r\n  COPS	text.kill_all_cops	text
+  NO\r\nMERCY	text.no_mercy	text
+NO	text.no	text
+No! How did you get in? HELP!!	commissioner_hagan.no_how_get_in_help	dialogue-text
+This just in: By order of the mayor, several MetroLaw units have been deployed to deal with the terrorists who seized control of the Precinct 9 police station earlier tonight.	bgradio.metrolaw_deployed_deal_terrorists	dialogue-text
+Many have pointed to tonight's events as further evidence of the obsoletion of the traditional police force, and that fully privatized law enforcement is surely the way of the future.	bgradio.obsoletion_traditional_police_privatized_future	dialogue-text
+This broadcast has been sponsored by MetroCorp: A Brighter Future for Sunny City. Good night!	bgradio.sponsored_by_metrocorp_brighter_future	dialogue-text
+...with more snow expected through the holiday weekend.	bgradio.more_snow_expected_holiday_weekend	dialogue-text
+Heeelp! It's after me!	punk.heeelp_after_me	dialogue-text
+This is Balista speaking! The coward Hagan must give himself up!	bgspeaker.balista_coward_hagan_give_up	dialogue-text
+Ha! Not likely!	commissioner_hagan.ha_not_likely	dialogue-text
+Furthermore, whoever brings me the commissioner - dead or alive - will be spared further violence!	bgspeaker.whoever_brings_commissioner_spared_violence	dialogue-text
+So, you'll turn my own men against me?! You evil, stinking, blood-crazy...	commissioner_hagan.turn_men_against_me_evil	dialogue-text
+That does it! NO ONE is getting in! No matter how they BEG!	commissioner_hagan.no_one_getting_in_beg	dialogue-text
+Woooh! Nice shot, Queen B!	punk.nice_shot_queen_b	dialogue-text
+ HIVE\r\nGANG\r\nRULEZ	text.hive_gang_rulez_2	text
+MERSY	text.mersy	text
+OBEY	text.obey	text
+QUEEN	text.queen	text
+ANARKY	text.anarky	text
+Okay, let'sh shee here. I'd rather have my trusty plane, but... thish'll do. If I can jusht find the ignition. Ah, here it ish.	jeff.okay_trusty_plane_ignition	dialogue-text
+Jeff	name.jeff	dialogue-name
+Hold them off while I work on thish thing!	jeff.hold_them_off_work_on_thing	dialogue-text
+She's alive! SHE'S ALIVE! Hop on board, guysh!	jeff.shes_alive_hop_on_board	dialogue-text
+Don't let them get away! DO something!	sensible_metrocop.dont_let_them_get_away	dialogue-text
+MetroCop	name.metrocop	dialogue-name
+Like what? We're already shooting at them. And we're all out of Streetsweepers.	metrocop.like_what_shooting_all_out_streetsweepers	dialogue-text
+If you're after my beer, it'sh all gone. These coppers confshi... consh... took it when they bushted me. They took my wings, the bashtards!	jeff.if_after_beer_all_gone_took_my_wings	dialogue-text
+Ok, you've convincshed me. Let'sh fly out of here!	jeff.ok_convinced_fly_out	dialogue-text
+Now I'm jusht waiting for thoshe thugsh to come back and finish me off. I don't feel like running any more. It'sh jusht one damn thing after another...	jeff.waiting_thugs_finish_me_off_one_damn_thing	dialogue-text
+Nope. Never gonna fly again... might ash well give up and jusht [grumbles incomprehensibly].	jeff.never_gonna_fly_again_give_up_grumbles	dialogue-text
+I mean what'sh the point if they can jusht... hmm... umm... ish that a...?	jeff.whats_point_if_they_can_just	dialogue-text
+Save your excuses for the boss, you idiot!	sensible_metrocop.save_excuses_for_boss_idiot	dialogue-text
+Don't worry. I'm shteady ash a rock. And I'll FLY like one, jusht you wait.	jeff.steady_as_rock_fly_like_one	dialogue-text
+Thish thing ish old even by my standardsh... Where doesh thish part go? No, that'sh not it...	jeff.old_by_my_standards_where_part_go	dialogue-text
+Hmmm. Firsht engine is done, but the shecond engine could use some tweaking too. Hold them off a bit longer, guysh!	jeff.first_engine_done_second_tweaking	dialogue-text
+Dang it! Shomething'sh wrong with the enginesh. What numbshkull worked on thish? Gimme a minute to check under the hood here...	jeff.something_wrong_engines_numbskull	dialogue-text
+Don't let the assets escape!	agent.dont_let_assets_escape	dialogue-text
+DEFEAT\r\nThe pilot was killed!	popup.defeat_pilot_killed	popup
+MY LIFE FOR BALISTAAAAA!!!	thug.my_life_for_balista	dialogue-text
+...EMERGENCY!!! Abandon ship!	jeff.emergency_abandon_ship	dialogue-text
+A shmooth getaway, all thingsh conshidered!	jeff.smooth_getaway_considered	dialogue-text
+And kill that crazy broad for me, will ya?	jeff.kill_crazy_broad	dialogue-text
+Move your assh!	jeff.move_your_ass	dialogue-text
+Come on, let'sh get out of here!	jeff.come_on_get_out_of_here	dialogue-text
+I ain't gonna shtick around here all night!	jeff.aint_stick_around_all_night	dialogue-text
+You won't believe how I shurvived. I'll tell you later!	jeff.wont_believe_how_survived	dialogue-text
+Sho, you're shtill alive! Get in!	jeff.still_alive_get_in	dialogue-text
+Give it up, Balista! Hagan is dead - you got what you wanted!	johnny.give_up_balista_hagan_dead_wanted	dialogue-text
+But why stop now when I'm having SO... MUCH... FUN?	balista.why_stop_now_so_much_fun	dialogue-text
+Thanks for the help. You better get out of here. Far from Sunny City.	johnny.thanks_help_get_out_far_sunny_city	dialogue-text
+Send me a postcard, will ya?	johnny.send_postcard	dialogue-text
+You won't get rid of me that easily, pig-lovers!	balista.wont_get_rid_me_easily_pig_lovers	dialogue-text
+You no hurt Queen Balista!	quillhogg.no_hurt_queen_balista	dialogue-text
+The name'sh Jeff, by the way. You know, thish could be the beginning of a beautiful...	jeff.name_jeff_beautiful_beginning	dialogue-text
+RUHAHAAAARRR HUARRRR!	lord_pinkerton.ruhahaaarrr_huarrrr	dialogue-text
+They don't give up, do they?\r\nMaybe it is that they don't know how.	spectator.they_dont_give_up	dialogue-text
+The Spectator	name.the_spectator	dialogue-name
+Now, I imagine some rest is in order. A moment's peace, perhaps, somewhere beyond those dark hills.	spectator.rest_is_in_order_moments_peace	dialogue-text
+But the struggle between Order and Chaos is not yet determined. The balance will shift, and our heroes will return again and again to Sunny City.	spectator.struggle_order_chaos_balance	dialogue-text
+'Til then, what's there to say but:\r\nWell played, ladies and gentlemen.	spectator.well_played_ladies_gentlemen	dialogue-text

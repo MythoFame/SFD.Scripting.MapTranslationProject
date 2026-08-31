@@ -1,0 +1,13 @@
+original	key	kind
+Your men should learn not to point their guns at a fellow officer. We're Detectives McBride and Santana, SCPD. We'll take it from here.	detective_mcbride.men_should_learn_not_point_guns_fellow_officer	dialogue-text
+Alright men, cuff these meatbags quickly before they wake up.	metrolaw.cuff_meatbags_before_wake_up	dialogue-text
+Scram, small-timers! These are the meatbags who blew up the TV station. They're government property.	metrolaw.scram_small_timers_government_property	dialogue-text
+Ah, but this is still an SCPD precinct. I'm sorry, officer. If you want your prize, you'll have to go through the proper channels.	detective_santana.still_scpd_precinct_proper_channels	dialogue-text
+This isn't over, coppers! You guys are history! MetroLaw is the future!	metrolaw.this_isnt_over_coppers_history_future	dialogue-text
+Help me cuff 'em, Santana. We're going downtown.	detective_mcbride.help_me_cuff_em_downtown	dialogue-text
+I'm starting to think the commissioner is right... You're a loose cannon, Johnny!	detective_santana.commissioner_right_loose_cannon_johnny	dialogue-text
+Attention superfighters! You are surrounded! Surrender now, and you will receive MetroLaw's award-winning professional care...	helicopter.attention_superfighters_surrounded_award_care	dialogue-text
+Speaker Voice	name.speaker_voice	dialogue-name
+Otherwise, you will be charged in full for any further damage to culturally significant buildings during your arrest...	helicopter.otherwise_charged_for_damage_culturally_significant	dialogue-text
+By resisting arrest, you agree to the terms and conditions as I have presented them. OK sergeant, you may proceed with the arrest.	helicopter.by_resisting_arrest_terms_conditions_proceed	dialogue-text
+B-buh- WHAT!	metrolaw.b_buh_what	dialogue-text

@@ -1,0 +1,129 @@
+key	translation
+punk.no_one_gets_out_by_order_of_balista	¡Nadie sale, por orden de Balista!
+firebug.growl_mfgllll	¡Mfgllll mfwrrrr! ¡MFWRRRR!
+prisoner.want_phone_call	¡Eh, jefe! ¡Quiero mi llamada!
+prisoner.look_out	¡Eh, CUIDADO!
+prisoner.what_hell_going_on	¿Q-qué demonios está PASANDO ahí fuera?
+punk_leader.kill_prisoners_too	¡Matad también a los prisioneros! ¡Ya tenemos todos los guerreros que necesitamos!
+prisoner.god_save_us_hive_gang	¡Dios nos salve, es la Pandilla Colmena!
+santana.respect_law_and_order	¡OYE! ¿No tenéis ningún respeto por la ley y el orden!?
+bobby.nope	Nel.
+balista.kill_them	Mátalos.
+johnny.you_bastards	¡BASTARDOS! ¡No os saldréis con la vuestra!
+balista.seal_all_exits_visit_commissioner	Quiero todas las salidas selladas. Nadie entra ni sale. Voy a hacerle una visita al Comisario.
+balista.full_well_detective_good_night	Sé eso PERFECTAMENTE, detective. Buenas noches.
+bobby.heard_lady_copper_goodnight	Has oído a la dama, madero. ¡Hora de decir buenas noches!
+grub.strange_noise_ignore	Ruido extraño... Lo ignoraré.
+bobby.you_got_it_queen_b	Lo que tú digas, Reina B.
+balista.report_mass_murderer	Hola. Quiero informar sobre el paradero de un notorio ASESINO EN MASA.
+name.mystery_woman	Mujer misteriosa
+receptionist.sure_lady_who	Claro, señora. ¿Quién?
+balista.me	Yo.
+receptionist.b_balista	¡B-Balista!
+officer.too_many_damn_many	¡Demasiados... demasiados!
+com.blood_for_balista	¡Sangre! ¡Sangre para BALISTA!
+officer.pipe_it_down	¡Sí, sí! ¡Baja la voz!
+receptionist.electricity_back_cameras	Al menos la electricidad ha vuelto... pero ¿qué demonios pasa con las cámaras de seguridad?
+officer.why_mcbride_brought_rogue_fighters	¿Por qué McBride trajo a esos luchadores renegados? MetroLaw los atrapará al final, no tiene sentido resistirse.
+officer.wanted_for_questioning_corporate_slime	No sé. Quería interrogarlos o algo. O quizá solo quería fastidiar a esos babosos corporativos.
+officer.serves_em_right_good_police	¡Se lo merecen! No sé qué trama McBride, pero es buen policía. No quedamos muchos en esta ciudad...
+punk.yeee_hawww	¡Yiiii-jaaa!!!
+punk_leader.dead_pissed_off_hive_gang	¿Muerto?!\r\n\r\n¡Quienquiera que seas, acabas de cabrear a la Pandilla Colmena!
+text.block	BLOQUE
+text.exit	SALIDA
+text.balista_is_queen	BALISTA\r\n  ES\r\nREINA
+text.hive_gang	PANDILLA COLMENA
+text.help	AYUDA
+text.kill_em_all	MÁTALOS\r\nA\r\nTODOS
+text.kill	MATA
+text.hive_gang_rulez	PANDILLA COLMENA\r\n  ¡MANDA!
+text.rulez	¡MANDA!
+text.detention_block_a	BLOQUE DE DETENCIÓN A
+popup.sunny_city_20xx	Ciudad Soleada, 20XX\r\n\r\n
+popup.sunny_city_9th_precinct	Ciudad Soleada, 20XX\r\n\r\nComisaría 9ª
+jug.borrow_buck_soda	Oye Frank, ¿me prestas un dólar? Quiero comprar un refresco de la máquina.
+frank.buy_soda_thug_bat_smash	¿Comprar un refresco? ¡¿COMPRAR un refresco?! ¡Eres un MATÓN! ¡Tienes un BATE! ¡Simplemente DESTROZA la maldita cosa!
+jug.sounds_like_lot_of_work	Oooh... No sé, eso suena a mucho trabajo... Más fácil simplemente...
+frank.not_point_principles_paying	¡No es ESE el punto! ¡Se trata de... de PRINCIPIOS! ¿Dónde estaría la Pandilla Colmena si empezáramos a PAGAR por las cosas?
+jug.right_frank_principles	Supongo que tienes razón Frank... Es importante tener principios.
+frank.people_these_days	La gente de hoy en día...
+johnny.youre_those_prisoners_survive_help	¡Eh, sois esos prisioneros! ¿Cómo demonios habéis sobrevivido? Da igual. Veo que no sois amigos de la Pandilla Colmena. Así que ayudémonos.
+johnny.pilot_detention_block_d_kill_balista	Hay un piloto, prisionero como vosotros, en el Bloque D. Si alguien puede sacaros de aquí, es él. Yo os llevo hasta él, pero primero ayudadme a matar a Balista.
+johnny.crap_coming_elevator_behind	¡Mierda, vienen! Escuchad. Hay un ascensor tras la puerta detrás de vosotros. Intentaré encontrar otro camino arriba. Nos vemos allí, eso espero.
+agent.tell_men_relax_take_over	Puedes decirles a tus hombres que se relajen, detective. Nosotros nos encargamos.
+detective_kong.mercenary_scumbags_wanted_cops	¡Escoria mercenaria! ¡Pedí refuerzos, POLIS, no un montón de mercenarios gatillo fácil!
+agent.mayor_deems_insufficient_professionals	El alcalde considera que su departamento... es INSUFICIENTE para la situación. Deje esto a los profesionales.
+detective_kong.you_oughta	¡Tú... tú... por qué debería...!
+agent.alpha_tango_deploy_streetsweepers	Alfa tango a zeta foxtrot. Desplieguen a los BarreCalles.
+bgradio.precinct9_attacked_by_hive_gang	La comisaría 9 fue atacada hoy por la infame Pandilla Colmena. Su líder, conocida solo como Balista, es la reina del crimen desorganizado de nuestra ciudad.
+name.newsreader	Presentador
+bgradio.balista_army_took_control_station	¡El ejército de matones fanáticos de Balista tomó rápidamente el control de la comisaría y se ha atrincherado dentro! ¡No está claro si alguien sobrevivió al bárbaro ataque!
+bgradio.mayor_called_totally_unfair	El alcalde comentó brevemente el ataque, calificándolo de "totalmente injusto". ¡Les traeremos actualizaciones en vivo mientras se desarrolla esta emocionante historia!
+bgradio.assault_revenge_crime_campaign_hagan	El asalto fue una venganza imprudente por la reciente campaña contra el crimen del Comisario Hagan, en la que murieron varios jefes de la Pandilla Colmena.
+bgspeaker.balista_station_under_hive_control_no_escape	Aquí Balista. Esta comisaría está ahora bajo control de la Pandilla Colmena. Todas las salidas están selladas. No hay escape.
+name.balista	Balista
+bgspeaker.crush_pockets_resistance_head_of_hagan	¡A todos mis valientes guerreros, mis fieles berserkers: aplastad los últimos focos de resistencia! ¡Traedme la cabeza del Comisario Hagan!
+bgspeaker.one_law_do_what_hate_tells	¡Esta noche solo hay una ley: ¡Haz lo que tu Odio te diga!
+johnny.youre_that_prisoner_survive_help	¡Eh, eres ese prisionero! ¿Cómo demonios sobreviviste? Da igual. Veo que no eres amigo de la Pandilla Colmena. Ayudémonos.
+punk_leader.die_by_order_of_balista	¡Muere! ¡Por orden de Balista!
+text.kill_all_cops	MATAD\r\n  A TODOS\r\nLOS POLIS
+text.no_mercy	SIN\r\nPIEDAD
+text.no	NO
+commissioner_hagan.no_how_get_in_help	¡No! ¿Cómo habéis entrado? ¡AYUDA!!
+bgradio.metrolaw_deployed_deal_terrorists	Última hora: Por orden del alcalde, varias unidades de MetroLaw han sido desplegadas para lidiar con los terroristas que tomaron el control de la comisaría de la Comisaría 9 esta noche.
+bgradio.obsoletion_traditional_police_privatized_future	Muchos han señalado los eventos de esta noche como prueba de la obsolescencia de la fuerza policial tradicional, y que la aplicación de la ley totalmente privatizada es sin duda el camino del futuro.
+bgradio.sponsored_by_metrocorp_brighter_future	Esta emisión ha sido patrocinada por MetroCorp: Un Futuro Más Brillante para Ciudad Soleada. ¡Buenas noches!
+bgradio.more_snow_expected_holiday_weekend	...con más nieve esperada durante el fin de semana festivo.
+punk.heeelp_after_me	¡Socorro! ¡Va a por mí!
+bgspeaker.balista_coward_hagan_give_up	¡Aquí Balista! ¡El cobarde de Hagan debe entregarse!
+commissioner_hagan.ha_not_likely	¡Ja! ¡Ni hablar!
+bgspeaker.whoever_brings_commissioner_spared_violence	¡Además, quien me traiga al comisario, vivo o muerto, se librará de más violencia!
+commissioner_hagan.turn_men_against_me_evil	¿Así que pondrás a mis propios hombres en mi contra?! ¡Maldita, apestosa, sedienta de sangre...
+commissioner_hagan.no_one_getting_in_beg	¡Se acabó! ¡NADIE va a entrar! ¡No importa cuánto SUPLIQUEN!
+punk.nice_shot_queen_b	¡Woooh! ¡Buen tiro, Reina B!
+text.hive_gang_rulez_2	PANDILLA\r\nCOLMENA\r\nMANDA
+text.mersy	PIEDAD
+text.obey	OBEDECE
+text.queen	REINA
+text.anarky	ANARQUÍA
+jeff.okay_trusty_plane_ignition	Vale, veamoh aquí. Preferiría mi fiel avión, pero... ehtoh servirá. Shi puedo encontrar el contacto. Ah, aquí ehtá.
+name.jeff	Jeff
+jeff.hold_them_off_work_on_thing	¡Entretenedlos mientrah trabajo en ehtoh!
+jeff.shes_alive_hop_on_board	¡Ehtá viva! ¡EHTÁ VIVA! ¡Subid a bordo, chicoh!
+sensible_metrocop.dont_let_them_get_away	¡No dejéis que se escapen! ¡Haced algo!
+name.metrocop	MetroPoli
+metrocop.like_what_shooting_all_out_streetsweepers	¿Como qué? Ya les estamos disparando. Y nos hemos quedado sin BarreCalles.
+jeff.if_after_beer_all_gone_took_my_wings	Shi buhcáis mi cerveza, ya no queda. Ehtoh maderoh me la confih... quitaron cuando me detuvieron. ¡Me quitaron lah alah, loh bahtardoh!
+jeff.ok_convinced_fly_out	Vale, me habéih convencido. ¡Vamoh a salir volando de aquí!
+jeff.waiting_thugs_finish_me_off_one_damn_thing	Ahora ehhtoy ehperando a que ehhoh matoneh vuelvan y acaben conmigo. Ya no quiero correr máh. Eh una maldita coha tras otra...
+jeff.never_gonna_fly_again_give_up_grumbles	Nel. Nunca volveré a volar... máh vale rendirme y... [gruñe incomprensible].
+jeff.whats_point_if_they_can_just	Quiero decir, ¿qué shentido tiene shi pueden simplemente... hmm... umm... eh eho un...?
+sensible_metrocop.save_excuses_for_boss_idiot	¡Guárdate las excusas para el jefe, idiota!
+jeff.steady_as_rock_fly_like_one	No oh preocupéih. Ehtoy fihme como una roca. Y VOLARÉ como una, ya veréih.
+jeff.old_by_my_standards_where_part_go	Ehta coha eh vieja incluho para mí... ¿Dónde va ehta pieza? No, ahsí no eh...
+jeff.first_engine_done_second_tweaking	Hmmm. Primer motor lihto, pero el hegundo podría necehitar unoh retoqueh máh. ¡Entretenedloh un poco máh, chicoh!
+jeff.something_wrong_engines_numbskull	¡Maldita sea! Algo va mal con loh motoreh. ¿Qué zoquete trabajó en ehtoh? Dadme un minuto para mirar bajo el capó...
+agent.dont_let_assets_escape	¡No dejéis que los activos escapen!
+popup.defeat_pilot_killed	¡DERROTA\r\nEl piloto murió!
+thug.my_life_for_balista	¡¡¡MI VIDA POR BALISTAAAAA!!!
+jeff.emergency_abandon_ship	...¡¡¡EMERGENCIA!!! ¡Abandonad la nave!
+jeff.smooth_getaway_considered	¡Una huida shsuave, teniendo en cuenta todo!
+jeff.kill_crazy_broad	¿Y matáis a esa loca por mí, vale?
+jeff.move_your_ass	¡Mueve tu culo!
+jeff.come_on_get_out_of_here	¡Venga, salgamos de aquí!
+jeff.aint_stick_around_all_night	¡No voy a quedarme aquí toda la noche!
+jeff.wont_believe_how_survived	¡No creerás cómo shsobreviví. ¡Te lo contaré luego!
+jeff.still_alive_get_in	¡Ahshí que shigues vivo! ¡Entra!
+johnny.give_up_balista_hagan_dead_wanted	¡Ríndete, Balista! ¡Hagan está muerto, ya tienes lo que querías!
+balista.why_stop_now_so_much_fun	¿Pero por qué parar ahora cuando me estoy DIVIRTIENDO TANTO?
+johnny.thanks_help_get_out_far_sunny_city	Gracias por la ayuda. Será mejor que salgáis de aquí. Lejos de Ciudad Soleada.
+johnny.send_postcard	¿Me enviáis una postal, vale?
+balista.wont_get_rid_me_easily_pig_lovers	¡No os libraréis de mí tan fácilmente, amantes de los cerdos!
+quillhogg.no_hurt_queen_balista	¡Tú no hacer daño a Reina Balista!
+jeff.name_jeff_beautiful_beginning	Por cierto, me llamo Jeff. ¿Sabes? Ehto podría ser el comienzo de algo hermoho...
+lord_pinkerton.ruhahaaarrr_huarrrr	¡RUHAHAAAARRR HUARRRR!
+spectator.they_dont_give_up	No se rinden, ¿verdad?\r\nQuizá es que no saben cómo.
+name.the_spectator	El Espectador
+spectator.rest_is_in_order_moments_peace	Ahora, imagino que toca descansar. Un momento de paz, quizá, en algún lugar más allá de esas colinas oscuras.
+spectator.struggle_order_chaos_balance	Pero la lucha entre el Orden y el Caos aún no está decidida. La balanza se inclinará y nuestros héroes volverán una y otra vez a Ciudad Soleada.
+spectator.well_played_ladies_gentlemen	Hasta entonces, qué decir salvo:\r\nBien jugado, damas y caballeros.

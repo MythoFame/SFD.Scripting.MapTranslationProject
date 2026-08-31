@@ -1,0 +1,49 @@
+original	key	kind
+Good evening, Dr. Fritzliebe! How is ze Überkämpfer project coming along?	ss_officer.good_evening_fritzliebe_ueberkaempfer_project	dialogue-text
+Excellently, Herr Sturmbannführer! Ze prisoners are responding exceedingly vell to ze formula. Soon ze Führer vill have his unstoppable army!	fritzliebe.excellently_formula_fuehrer_unstoppable_army	dialogue-text
+Vat's that, doctor?	ss_officer.whats_that_doctor	dialogue-text
+I said, HEIL HITLER!	fritzliebe.i_said_heil_hitler	dialogue-text
+HEIL HITLER!	ss_officer.heil_hitler	dialogue-text
+Verdammt! An Allied air strike!	ss_officer.verdammt_allied_air_strike	dialogue-text
+(And soon ze Führer himself vill cower before Fritzliebe! Ha-ha!)	fritzliebe.soon_fuehrer_cower_before_fritzliebe	dialogue-text
+Mein Gott! Stop them!	nazi_scientist.mein_gott_stop_them	dialogue-text
+Fear not! My anti-aircraft system vill deal with them shortly!	fritzliebe.fear_not_antiaircraft_deal_shortly	dialogue-text
+Still... zese old cellars are in poor condition. Raus!!	fritzliebe.old_cellars_poor_condition_raus	dialogue-text
+Castle Sonnenfreude\nSomewhere in Austria\nDecember 1943	popup.castle_sonnenfreude_austria_december_1943	popup
+Again, from ze top! Und more feeling zis time!	ss_officer.again_from_top_more_feeling	dialogue-text
+SS Officer	name.ss_officer	dialogue-name
+Nein, nein, nein! Too late again!	ss_officer.nein_too_late_again	dialogue-text
+O Tannenbaum, o Tannenbaum,\nwie treu sind deine Blätter!	chorus.o_tannenbaum_treu_blaetter	dialogue-text
+Chorus	name.chorus	dialogue-name
+Du grünst nicht nur zur Sommerzeit,\nNein auch im Winter, wenn es schneit!	chorus.du_gruenst_nicht_nur_sommerzeit_winter_schneit	dialogue-text
+Verdammt! Wo ist der Aufzug?	ss_officer.verdammt_wo_ist_der_aufzug	dialogue-text
+Das ist unfair!	ss_officer.das_ist_unfair	dialogue-text
+NEIN! Du darfst den Weihnachtsbaum nicht zerstören!	nazi_soldier.nein_weihnachtsbaum_nicht_zerstoeren	dialogue-text
+Attentaten!!!	zombie.attentaten	dialogue-text
+BIOCHEMIE is my specialty, it's true...	bgspeaker.biochemie_specialty_true	dialogue-text
+Dr. Fritzliebe	name.dr_fritzliebe	dialogue-name
+...but I have also many MECHANISCHE advancements to show you!	fritzliebe.mechanische_advancements_show_you	dialogue-text
+Ha! Ve shall see!	fritzliebe.ha_ve_shall_see	dialogue-text
+Impudent fools!	fritzliebe.impudent_fools	dialogue-text
+*cough* Arrrrrgh... Schweinhunden! You have killed me... but you vill not escape here alive!	fritzliebe.cough_schweinhunden_killed_not_escape_alive	dialogue-text
+Die now!	fritzliebe.die_now	dialogue-text
+There she goes, boys. Mission accomplished.	lt_kowalski.there_she_goes_mission_accomplished	dialogue-text
+Someone's coming out, sir!	us_soldier.someones_coming_out_sir	dialogue-text
+Nevermind, you can tell me later. My orders are to get you the hell out of here!	lt_kowalski.nevermind_orders_get_you_out	dialogue-text
+If what I've heard is true, you just might be what we need to win this war...	lt_kowalski.if_what_heard_win_this_war	dialogue-text
+RARRRRRRRRH!!	bgdoor.roar_rarrr	dialogue-text
+Kriegbär #2	name.kriegbar_2	dialogue-name
+HNNNARRRRRRRHHH!	kriegbar.hnnnarrr	dialogue-text
+Ah, my children... you have killed poor Kriegbär #2.	fritzliebe.my_children_killed_poor_kriegbar_2	dialogue-text
+You are my greatest triumph... but also my greatest mistake!	fritzliebe.greatest_triumph_greatest_mistake	dialogue-text
+It is time I rectify that mistake! I vill take you apart, start again. And the next model vill be better. It vill OBEY.	fritzliebe.time_rectify_apart_start_again_obey	dialogue-text
+I vill have to take you apart and start again. And this time you vill be perfect!	fritzliebe.take_apart_start_again_perfect	dialogue-text
+Ah, children! You've come so far. How proud it makes me. You really are my greatest scientific TRIUMPH!	bgspeaker.children_come_so_far_proud_triumph	dialogue-text
+But also my greatest MISTAKE! It is time to rectify that mistake. Frau Sturmbannführer! Bring zem to me!	bgspeaker.greatest_mistake_rectify_frau_bring_them	dialogue-text
+Hm! Ze Kriegbär has escaped? That bodes ill for you, my friend!	bgspeaker.kriegbar_escaped_bodes_ill_friend	dialogue-text
+Ah, my child! You've come so far. How proud it makes me. You really are my greatest scientific TRIUMPH!	bgspeaker.my_child_come_so_far_proud_triumph	dialogue-text
+But also my greatest MISTAKE! It is time to rectify that mistake. Frau Sturmbannführer! Bring ze specimen to me!	bgspeaker.greatest_mistake_bring_specimen	dialogue-text
+Hm! Ze Kriegbär has escaped? That bodes ill for you, my Lieblings!	bgspeaker.kriegbar_escaped_bodes_ill_lieblings	dialogue-text
+Ah, poor Kriegbär #2! He vas one of my favorite creatures. Oh vell... I admit defeat. Come in, and let us discuss the terms of my surrender!	bgspeaker.poor_kriegbar_favorite_admit_defeat_terms_surrender	dialogue-text
+You don't look like Nazis - how the hell did you get out alive?	lt_kowalski.dont_look_like_nazis_how_get_out_alive_plural	dialogue-text
+You don't look like a Nazi - how the hell did you get out alive?	lt_kowalski.dont_look_like_nazi_how_get_out_alive_singular	dialogue-text

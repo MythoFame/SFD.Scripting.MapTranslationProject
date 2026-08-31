@@ -1,0 +1,106 @@
+original	key	kind
+Rise and shine, superfighters! There is work to do!	bgspeaker.rise_and_shine_superfighters_work_to_do	dialogue-text
+Speaker Voice	name.speaker_voice	dialogue-name
+Feeling a little disoriented? Don't worry!	bgspeaker.feeling_disoriented_dont_worry	dialogue-text
+Just relax and do whatever comes naturally.	bgspeaker.relax_do_whatever_natural	dialogue-text
+Remember - it's them or us!	punk.remember_them_or_us	dialogue-text
+...and remember: HAVE FUN!	bgspeaker.remember_have_fun	dialogue-text
+Good job! But now the real fight begins!	bgspeaker.good_job_real_fight_begins	dialogue-text
+Kill 'em all!	punk.kill_em_all	dialogue-text
+Fine work! Take a breather before your next challenge.	bgspeaker.fine_work_breather_next_challenge	dialogue-text
+Somewhere in Sunny City\n20XX	popup.somewhere_in_sunny_city_20xx	popup
+23 more kills and me get own cooking show!	meatgrinder.23_more_kills_cooking_show	dialogue-text
+There - blast 'em!	punk.there_blast_em	dialogue-text
+Ladies and gentlemen, would you please welcome to the stage...	announcer.ladies_gentlemen_welcome_to_stage	dialogue-text
+...THE SUPERFIGHTERS!	announcer.the_superfighters	dialogue-text
+Good job out there! You sure handled those punks!	funnyman.good_job_handled_those_punks	dialogue-text
+Now it's time for a well-earned rest. Sweet dreams!	funnyman.well_earned_rest_sweet_dreams	dialogue-text
+That's all folks! BUT don't forget to tune in tomorrow - that's when the REAL fight begins.	funnyman.thats_all_folks_tune_tomorrow_real_fight	dialogue-text
+What the hell! WHAT THE HELL!	punk.what_the_hell	dialogue-text
+Hurr hurr hurr...	meatgrinder.hurr_hurr	dialogue-text
+What the...!?	funnyman.what_the	dialogue-text
+This'll fix it!	worker.thisll_fix_it	dialogue-text
+Um, all part of the show folks! We'll be right back after these messages!	funnyman.all_part_of_show_right_back_messages	dialogue-text
+Guards! STOP THEM!	bgspeaker.guards_stop_them	dialogue-text
+Funnyman	name.funnyman	dialogue-name
+You're finished, superfighters! You'll never work in this town again!	funnyman.finished_superfighters_never_work_again	dialogue-text
+It is time, ladies and gentlemen, for the long-awaited season finale of Superfighters Live!	funnyman.season_finale_superfighters_live	dialogue-text
+Which team will be victorious in the Pit? Time to find out!	funnyman.which_team_victorious_in_pit	dialogue-text
+No hunters this time - only the cream of the crop: souped up, battle-crazy superfighters straight from the fishtanks!	funnyman.no_hunters_cream_crop_fishtanks	dialogue-text
+Let the fight begin!	funnyman.let_fight_begin	dialogue-text
+What a brawl! Ladies and gentlemen -	funnyman.what_a_brawl_ladies_gentlemen	dialogue-text
+Team Blue is victorious!	funnyman.team_blue_victorious	dialogue-text
+Now, let's see how they handle some real firepower! It's time for...	funnyman.real_firepower_time_for	dialogue-text
+Remarkable! Team Blue is still standing! Let's have some more!	funnyman.team_blue_still_standing_more	dialogue-text
+...THE LAST STAND!	funnyman.the_last_stand	dialogue-text
+Um... boss?	bodyguard.um_boss	dialogue-text
+HEE HEE HEE!	soldier_2.hee_hee_hee	dialogue-text
+Hee hee!	soldier_2.hee_hee	dialogue-text
+Five!	soldier_2.five	dialogue-text
+Three!\nHee!	soldier_2.three_hee	dialogue-text
+Two!	soldier_2.two	dialogue-text
+One!	soldier_2.one	dialogue-text
+Done!\nHee hee!	soldier_2.done_hee_hee	dialogue-text
+Won't bite!\nHee hee!	soldier_2.wont_bite_hee_hee	dialogue-text
+Stage fright!\nHee hee!	soldier_2.stage_fright_hee_hee	dialogue-text
+TEN!	soldier_1.ten	dialogue-text
+Seven, eight!	soldier_1.seven_eight	dialogue-text
+Three!	soldier_1.three	dialogue-text
+Alright smartypants, this is your last warning! I'm gonna count to ten, and you better move on before I'm done!	soldier_1.last_warning_count_to_ten_move_on	dialogue-text
+Go on! The audience won't bite! He he!	soldier_1.audience_wont_bite_he_he	dialogue-text
+You don't wanna end up like these poor bastards. Guess they got stagefright, he he!	soldier_1.dont_wanna_end_like_poor_bastards_stagefright	dialogue-text
+Big star!\nHee hee!	soldier_2.big_star_hee_hee	dialogue-text
+Go on! The show's starting, and you're the big star.	soldier_1.show_starting_big_star	dialogue-text
+Showtime!\nHee hee!	soldier_2.showtime_hee_hee	dialogue-text
+Go on meatbags! It's showtime!	soldier_1.go_on_meatbags_showtime	dialogue-text
+Idiots! If that glass hadn't been perfectly indestructible...	funnyman.idiots_glass_indestructible	dialogue-text
+Oh boy!	soldier_2.oh_boy	dialogue-text
+Nine!	soldier_1.nine	dialogue-text
+Is that so, meatbag?	soldier_1.is_that_so_meatbag	dialogue-text
+You can't treat us like this!	fighter.you_cant_treat_us_like_this	dialogue-text
+I'm NOT going back to Kiddie Hour!!!	funnyman.not_going_back_to_kiddie_hour	dialogue-text
+You... haven't... won!...	funnyman.you_havent_won	dialogue-text
+You superfighters - why can't you just play by the rules?	bgspeaker.why_cant_play_by_rules	dialogue-text
+The Funnyman	name.the_funnyman	dialogue-name
+I have a good career going, and I'm not gonna let you bio-engineered morons ruin it!	bgspeaker.good_career_bio_engineered_morons_ruin	dialogue-text
+You were a STAR! You gave the people what they wanted! Without that, what are you? Just useless, broken toy soldiers!	bgspeaker.you_were_star_broken_toy_soldiers	dialogue-text
+Can't you see we're providing a public service? We're keeping the order! Without Superfighters, there would be CHAOS!	bgspeaker.public_service_keeping_order_chaos	dialogue-text
+That HURT! I'm going to enjoy killing you!	bgspeaker.that_hurt_enjoy_killing_you	dialogue-text
+Killing me won't change anything! I'm just the figurehead... the man in the fancy suit. I can be replaced... but I won't let that happen!	bgspeaker.killing_me_wont_change_figurehead_replaced	dialogue-text
+What are you trying to do, huh? Even if you destroy the show, you can't blow up the entire studio!	bgspeaker.what_trying_destroy_show_cant_blow_studio	dialogue-text
+You ungrateful swine! What would you do without us?	bgspeaker.ungrateful_swine_what_without_us	dialogue-text
+Roger that alpha 3. All units deployed, we're closing in on target.	bgspeaker.roger_alpha3_units_deployed_closing_target	dialogue-text
+More soldiers are coming! You're trapped in here! You may as well surrender!	bgspeaker.more_soldiers_coming_trapped_surrender	dialogue-text
+Urgh - everyone's a critic...	funnyman.urgh_everyones_a_critic	dialogue-text
+Curtains... down...	funnyman.curtains_down	dialogue-text
+Rough night, huh?	bgspectator.rough_night_huh	dialogue-text
+Shadowy Figure	name.shadowy_figure	dialogue-name
+I am sure you realize you are not getting off this building. All exits are cut off and more soldiers are coming.	bgspectator.not_getting_off_building_exits_cut	dialogue-text
+But suppose someone were to bring down the broadcasting tower. Suppose someone were to stop the signal...	bgspectator.suppose_bring_down_broadcasting_tower_stop_signal	dialogue-text
+What would the people do, I wonder, without their precious entertainment?	bgspectator.what_people_do_without_entertainment	dialogue-text
+It's something to ponder, I suppose.	bgspectator.something_to_ponder	dialogue-text
+More soldiers are coming. You'd better keep moving.	bgspectator.more_soldiers_keep_moving	dialogue-text
+Nowhere to go but up.	bgspectator.nowhere_to_go_but_up	dialogue-text
+You are out of time. They are coming.	bgspectator.out_of_time_coming	dialogue-text
+The hour is getting late.	bgspectator.hour_getting_late	dialogue-text
+This is your stop.	bgspectator.this_is_your_stop	dialogue-text
+We're taking hits!	helicopter.taking_hits	dialogue-text
+Pilot	name.pilot	dialogue-name
+Damn!	helicopter.damn	dialogue-text
+We're pulling out!	helicopter.pulling_out	dialogue-text
+Argh!	helicopter.argh	dialogue-text
+I didn't sign up for this!	helicopter.didnt_sign_up_for_this	dialogue-text
+What the hell was that!	helicopter.what_the_hell_was_that	dialogue-text
+Bodies?	agent.bodies	dialogue-text
+None found, sir. The tower itself fell across three city blocks. Units are on their way. It's a goddamn mess, sir.	metrocop.none_found_tower_fell_three_blocks_mess	dialogue-text
+I hope for your sake that you... SECURE the bodies. There are many who would like to get their hands on those specimens.	agent.hope_secure_bodies_specimens	dialogue-text
+Oooooh.\n...Yes, I suppose so.	metrocop.oooooh_yes_suppose_so	dialogue-text
+Not in THAT way, sergeant.	agent.not_in_that_way_sergeant	dialogue-text
+Extra! Extra! New developments! Culprits may still be at large! Manhunt under way in...	newsboy.extra_new_developments_culprits_manhunt	dialogue-text
+Extra, extra! TV studio in ruins! Beloved media profile presumed dead! #1 show cancelled indefinitely! Read all about it! Only in the Sunny City Times!	newsboy.tv_studio_ruins_beloved_profile_cancelled_sunny_times	dialogue-text
+Scram, kid!	metrocop.scram_kid	dialogue-text
+Stop the presses!	newsboy.stop_the_presses	dialogue-text
+This whole city is going insane. And it's about to get worse. I can feel it.	agent.whole_city_going_insane_worse_feel_it	dialogue-text
+Amen to that.	metrocop.amen_to_that	dialogue-text
+So, wanna do something later?	metrocop.wanna_do_something_later	dialogue-text
+The helicopter must be destroyed!	popup.helicopter_must_be_destroyed	popup
