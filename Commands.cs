@@ -54,18 +54,18 @@ public partial class GameScript : GameScriptInterfaceExtended
 
         int keyNum = 0;
 
-        void Dump(string value, string kind)
+        void Dump(string value, string kind, string objKey = "")
         {
             if (string.IsNullOrEmpty(value)) return;
 
             keyNum++;
-            string key = $"{chapter}{kind}.placeholder.{keyNum}";
-            storage.SetItem($"{kind}.{keyNum}", $"{value}\t{key}\t{kind}");
+
+            storage.SetItem($"{kind}.{keyNum}", $"{value}\t{chapter}{kind}.{objKey}placeholder.{keyNum}\t{kind}");
         }
 
         foreach (IObjectDialogueTrigger dialogueTrigger in Game.GetObjects<IObjectDialogueTrigger>())
         {
-            Dump(dialogueTrigger.GetDialogueText(), "dialogue-text");
+            Dump(dialogueTrigger.GetDialogueText(), "dialogue-text", ObjectKey(dialogueTrigger.GetDialogueTargetObject()));
             Dump(dialogueTrigger.GetDialogueName(), "dialogue-name");
         }
 
@@ -80,5 +80,12 @@ public partial class GameScript : GameScriptInterfaceExtended
         }
 
         Game.ShowChatMessage("Created dump!", Color.Green, args.User.UserIdentifier);
+    }
+
+    private static string ObjectKey(IObject obj)
+    {
+        if (obj == null || string.IsNullOrWhiteSpace(obj.Name)) return "";
+
+        return $"{obj.Name.Replace(' ', '_').ToLowerInvariant()}.";
     }
 }
