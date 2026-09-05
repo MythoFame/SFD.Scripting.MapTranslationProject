@@ -6,14 +6,14 @@ public partial class GameScript : GameScriptInterfaceExtended
 {
     internal static class TranslationsDatabase
     {
-        public static readonly string[] LanguageCodes = { "es", "ru", "pt" };
+        public static readonly string[] LanguageCodes = { "es-ES", "ru-RU", "pt-BR" };
         public static readonly string[] LanguageDisplayNames = { "Español", "Русский", "Português" };
 
         public static readonly Dictionary<string, Dictionary<string, Dictionary<ulong, string>>> Maps = new()
         {
             ["0546d635-8383-4d98-a19b-06e45390f2f2"] = new()
             {
-                ["es"] = new()
+                ["es-ES"] = new()
                 {
                     [0x036a7ec59a2378aeUL] = "Lo que tú digas, Reina B.",
                     [0x04288307a2f02760UL] = "Hola. Quiero informar sobre el paradero de un notorio ASESINO EN MASA.",
@@ -144,7 +144,7 @@ public partial class GameScript : GameScriptInterfaceExtended
                     [0xf5aeb95b33b40b2eUL] = "Supongo que tienes razón Frank... Es importante tener principios.",
                     [0xfe1e16ae5a0d8fdbUL] = "¿Por qué McBride trajo a esos luchadores renegados? MetroLaw los atrapará al final, no tiene sentido resistirse.",
                 },
-                ["pt"] = new()
+                ["pt-BR"] = new()
                 {
                     [0x036a7ec59a2378aeUL] = "Entendido, Rainha B.",
                     [0x04288307a2f02760UL] = "Alô. Quero denunciar o paradeiro de uma notória ASSASSINA EM MASSA.",
@@ -275,7 +275,7 @@ public partial class GameScript : GameScriptInterfaceExtended
                     [0xf5aeb95b33b40b2eUL] = "Acho que tem razão, Frank... É importante ter princípios.",
                     [0xfe1e16ae5a0d8fdbUL] = "Por que o McBride trouxe esses lutadores renegados? A MetroLaw vai pegá-los no fim – não adianta resistir.",
                 },
-                ["ru"] = new()
+                ["ru-RU"] = new()
                 {
                     [0x036a7ec59a2378aeUL] = "Понял, Королева Би.",
                     [0x04288307a2f02760UL] = "Здравствуйте. Хочу сообщить, где находится один печально известный МАССОВЫЙ УБИЙЦА.",
@@ -409,7 +409,7 @@ public partial class GameScript : GameScriptInterfaceExtended
             },
             ["363e25b5-c239-4a2e-bfb8-837535807f18"] = new()
             {
-                ["es"] = new()
+                ["es-ES"] = new()
                 {
                     [0x00c828920feb30a9UL] = "No pareces nazi, ¿cómo demonios saliste vivo?",
                     [0x00f894c753526ecaUL] = "Ah, hijos míos... habéis matado al pobre Kriegbär #2.",
@@ -460,7 +460,7 @@ public partial class GameScript : GameScriptInterfaceExtended
                     [0xf499c110f6abe42bUL] = "¡Sois mi mayor triunfo... pero también mi mayor error!",
                     [0xf682ec890cd8dea9UL] = "¡Verdammt! ¿Wo ist der Aufzug?",
                 },
-                ["pt"] = new()
+                ["pt-BR"] = new()
                 {
                     [0x00c828920feb30a9UL] = "Você não parece nazista – como diabos saiu vivo?",
                     [0x00f894c753526ecaUL] = "Ah, meus filhos... vocês mataram o pobre Kriegbär #2.",
@@ -511,7 +511,7 @@ public partial class GameScript : GameScriptInterfaceExtended
                     [0xf499c110f6abe42bUL] = "Vocês são meu maior triunfo... mas também meu maior erro!",
                     [0xf682ec890cd8dea9UL] = "Verdammt! Wo ist der Aufzug?",
                 },
-                ["ru"] = new()
+                ["ru-RU"] = new()
                 {
                     [0x00c828920feb30a9UL] = "Ты не похож на нациста — как ты выжил?",
                     [0x00f894c753526ecaUL] = "Ах, дети мои... вы убили бедного Кригбэра #2.",
@@ -565,21 +565,21 @@ public partial class GameScript : GameScriptInterfaceExtended
             },
             ["52ac9704-61c1-4227-bfd4-9196b81d4f7c"] = new()
             {
-                ["es"] = new()
+                ["es-ES"] = new()
                 {
                     [0x63e3b460a0674fcaUL] = "¡El Equipo Azul está que ARDE esta noche! ¡Pero veamos cómo se las arreglan con fuego de verdad! ¡Es hora de...",
                     [0x672b08acfa590a83UL] = "¡Damas y caballeros, la cosa se está calentando aquí en los estudios de SFTV!",
                     [0x8593736b30e839c0UL] = "...¡LA ÚLTIMA BATALLA!",
                     [0xd6e0acc5ae941713UL] = "El Bromista",
                 },
-                ["pt"] = new()
+                ["pt-BR"] = new()
                 {
                     [0x63e3b460a0674fcaUL] = "O Time Azul está PEGANDO FOGO esta noite! Mas vamos ver como se saem com fogo de verdade! É hora de...",
                     [0x672b08acfa590a83UL] = "Senhoras e senhores, as coisas estão esquentando aqui nos estúdios da SFTV!",
                     [0x8593736b30e839c0UL] = "...O ÚLTIMO CONFRONTO!",
                     [0xd6e0acc5ae941713UL] = "O Fanfarrão",
                 },
-                ["ru"] = new()
+                ["ru-RU"] = new()
                 {
                     [0x63e3b460a0674fcaUL] = "Команда Синих сегодня в УДАРЕ! Но посмотрим, как они справятся с настоящим огнем! Пора...",
                     [0x672b08acfa590a83UL] = "Дамы и господа, здесь в студии SFTV становится жарко!",
@@ -589,7 +589,7 @@ public partial class GameScript : GameScriptInterfaceExtended
             },
             ["9981018a-c343-442a-983e-719321c4da59"] = new()
             {
-                ["es"] = new()
+                ["es-ES"] = new()
                 {
                     [0x01051dfa0e811b17UL] = "Recibido alfa 3. Todas las unidades desplegadas, nos acercamos al objetivo.",
                     [0x01d074f6960b333eUL] = "¿Un poco desorientado? ¡No te preocupes!",
@@ -697,7 +697,7 @@ public partial class GameScript : GameScriptInterfaceExtended
                     [0xfdceebfbb5ed9ec2UL] = "¡Vienen más soldados! ¡Estáis atrapados aquí! ¡Más os vale rendiros!",
                     [0xfe9e91d49ea5398fUL] = "Esta es tu parada.",
                 },
-                ["pt"] = new()
+                ["pt-BR"] = new()
                 {
                     [0x01051dfa0e811b17UL] = "Entendido alfa 3. Todas as unidades em posição, fechando no alvo.",
                     [0x01d074f6960b333eUL] = "Se sentindo desorientado? Não se preocupe!",
@@ -805,7 +805,7 @@ public partial class GameScript : GameScriptInterfaceExtended
                     [0xfdceebfbb5ed9ec2UL] = "Mais soldados estão vindo! Vocês estão encurralados aqui! Melhor se renderem!",
                     [0xfe9e91d49ea5398fUL] = "Esta é a sua parada.",
                 },
-                ["ru"] = new()
+                ["ru-RU"] = new()
                 {
                     [0x01051dfa0e811b17UL] = "Вас понял, альфа 3. Все отряды выдвинуты, приближаемся к цели.",
                     [0x01d074f6960b333eUL] = "Чувствуешь дезориентацию? Не волнуйся!",
@@ -916,7 +916,7 @@ public partial class GameScript : GameScriptInterfaceExtended
             },
             ["a4244c9d-2ef2-40d7-acb2-dcf1579b5056"] = new()
             {
-                ["es"] = new()
+                ["es-ES"] = new()
                 {
                     [0x355f12fe77de5784UL] = "¡Esto no ha terminado, maderos! ¡Estáis acabados! ¡MetroLaw es el futuro!",
                     [0x417cd86cc0ca6c17UL] = "De lo contrario, se les cobrará por completo cualquier daño adicional a edificios de valor cultural durante su arresto...",
@@ -931,7 +931,7 @@ public partial class GameScript : GameScriptInterfaceExtended
                     [0xddc4eae441a43c65UL] = "Empiezo a pensar que el comisario tiene razón... ¡Eres un arma descontrolada, Johnny!",
                     [0xe14aefb8dc626bcbUL] = "¡Atención, superluchadores! ¡Estáis rodeados! ¡Ríndanse ahora y recibirán el premiado cuidado profesional de MetroLaw...",
                 },
-                ["pt"] = new()
+                ["pt-BR"] = new()
                 {
                     [0x355f12fe77de5784UL] = "Isso ainda não acabou, tiras! Vocês estão acabados! MetroLaw é o futuro!",
                     [0x417cd86cc0ca6c17UL] = "Caso contrário, vocês serão cobrados integralmente por qualquer dano adicional a prédios culturais durante sua prisão...",
@@ -946,7 +946,7 @@ public partial class GameScript : GameScriptInterfaceExtended
                     [0xddc4eae441a43c65UL] = "Começo a achar que o comissário tem razão... Você é descontrolado, Johnny!",
                     [0xe14aefb8dc626bcbUL] = "Atenção, superlutadores! Vocês estão cercados! Rendam-se agora e receberão o premiado cuidado profissional da MetroLaw...",
                 },
-                ["ru"] = new()
+                ["ru-RU"] = new()
                 {
                     [0x355f12fe77de5784UL] = "Это еще не конец, легавые! Вам конец! Будущее за MetroLaw!",
                     [0x417cd86cc0ca6c17UL] = "В противном случае с вас в полном объеме взыщут ущерб за любые дальнейшие повреждения культурно значимых зданий при задержании...",
@@ -964,7 +964,7 @@ public partial class GameScript : GameScriptInterfaceExtended
             },
             ["cb000516-a024-42fd-85e5-a041817a4723"] = new()
             {
-                ["es"] = new()
+                ["es-ES"] = new()
                 {
                     [0x07e18ce308582bf0UL] = "¿Cerebros...?",
                     [0x626cdf2178e4e3efUL] = "¡N-n-no! ¡¡¡AAAAARGH!!!",
@@ -972,7 +972,7 @@ public partial class GameScript : GameScriptInterfaceExtended
                     [0xa5dfdcf88e6e8a61UL] = "¡Oh, Dios, vienen!",
                     [0xfef9afddb45746d8UL] = "Zombi",
                 },
-                ["pt"] = new()
+                ["pt-BR"] = new()
                 {
                     [0x07e18ce308582bf0UL] = "Cérebros...?",
                     [0x626cdf2178e4e3efUL] = "N-n-não! AAAAARGH!",
@@ -980,7 +980,7 @@ public partial class GameScript : GameScriptInterfaceExtended
                     [0xa5dfdcf88e6e8a61UL] = "Meu Deus, estão vindo!",
                     [0xfef9afddb45746d8UL] = "Zumbi",
                 },
-                ["ru"] = new()
+                ["ru-RU"] = new()
                 {
                     [0x07e18ce308582bf0UL] = "Мозгии...?",
                     [0x626cdf2178e4e3efUL] = "Н-н-нет! ААААРГХ!",
