@@ -2,6 +2,8 @@
 
 [![Superfighters Deluxe Logo](https://raw.githubusercontent.com/MythoFame/.github/refs/heads/master/assets/SFD_titleLoop.gif)](https://store.steampowered.com/app/855860)
 
+![Banner](.github/assets/banner.png)
+
 # Superfighters Deluxe Map Translation Project
 
 Community-driven, open-database translations for every Superfighters Deluxe map
