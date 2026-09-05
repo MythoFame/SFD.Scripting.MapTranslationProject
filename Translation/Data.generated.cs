@@ -7,7 +7,7 @@ public partial class GameScript : GameScriptInterfaceExtended
     internal static class TranslationsDatabase
     {
         public static readonly string[] LanguageCodes = { "es-ES", "ru-RU", "pt-BR" };
-        public static readonly string[] LanguageDisplayNames = { "Español", "Русский", "Português" };
+        public static readonly string[] LanguageDisplayNames = { "Español (España)", "Русский (Россия)", "Português (Brasil)" };
 
         public static readonly Dictionary<string, Dictionary<string, Dictionary<ulong, string>>> Maps = new()
         {
