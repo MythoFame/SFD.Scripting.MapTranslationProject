@@ -2,13 +2,13 @@
 
 [![Superfighters Deluxe Logo](https://raw.githubusercontent.com/MythoFame/.github/refs/heads/master/assets/SFD_titleLoop.gif)](https://store.steampowered.com/app/855860)
 
-![Banner](.github/assets/banner.png)
-
 # Superfighters Deluxe Map Translation Project
 
 Community-driven, open-database translations for every Superfighters Deluxe map
 
 [![GitHub License](https://img.shields.io/github/license/MythoFame/SFD.Scripting.MapTranslationProject)](LICENSE)
+
+![Banner](.github/assets/banner.png)
 
 </div>
 
@@ -68,3 +68,7 @@ just generate-script         # compiles + welds to SFD.Scripting.MapTranslationP
 ### Quality checks
 
 The validate step reports overall coverage, hash collisions, placeholder mismatches, and length advisories.
+
+## ✍️ Special thanks
+
+- [MNC](https://steamcommunity.com/id/ManiacMNC/) for making the [banner](.github/assets/banner.png).
