@@ -55,7 +55,7 @@ public partial class GameScript : GameScriptInterfaceExtended
         {
             foreach (IDialogue dialogue in Game.GetDialogues())
             {
-                if (_dialogueIds.Add(dialogue.ID))
+                if (_dialogueIds.Add(dialogue.ID) && dialogue != null)
                 {
                     Invoke(dialogue);
                 }

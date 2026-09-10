@@ -12,7 +12,7 @@ public partial class GameScript
 
     private static void OnExternalDialogue(IDialogue dialogue)
     {
-        if (_createdDialogueIds.Contains(dialogue.ID))
+        if (_createdDialogueIds.Contains(dialogue.ID) || !dialogue.IsVisible)
         {
             return;
         }
