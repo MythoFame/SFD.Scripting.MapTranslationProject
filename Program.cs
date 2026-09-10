@@ -21,6 +21,10 @@ public partial class GameScript : GameScriptInterfaceExtended
             HostOnly = true
         });
 
+        // External dialogues (created by other scripts) are translated lazily per
+        // event, so the poller runs regardless of the chosen language.
+        OnDialogueCallback.Start(OnExternalDialogue);
+
         if (string.IsNullOrEmpty(LanguageKey) || !Game.IsFirstUpdate) // don't do anything mid-game or with no lang set
         {
             return;

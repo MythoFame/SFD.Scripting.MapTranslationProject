@@ -5,13 +5,19 @@ namespace SFD.Scripting.MapTranslationProject;
 public partial class GameScript
 {
     /// <summary>
+    /// The translation table resolved for the current map, frozen for the whole
+    /// map session. Language changes only take effect on the next map load.
+    /// </summary>
+    internal static Dictionary<ulong, string> ActiveTranslationTable;
+
+    /// <summary>
     /// Applies the stored language's translations to every dialogue trigger and
     /// text object of the loaded map. Does nothing when no language is stored or
     /// when the map has no entry in the generated database.
     /// </summary>
     private static void ApplyTranslations()
     {
-        Dictionary<ulong, string> table = ResolveTranslationTable();
+        Dictionary<ulong, string> table = ActiveTranslationTable = ResolveTranslationTable();
 
         if (table == null)
         {
