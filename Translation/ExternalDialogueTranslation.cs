@@ -27,23 +27,14 @@ public partial class GameScript
             return;
         }
 
-        string translatedText = null;
-        string translatedName = null;
-
-        bool textChanged = !string.IsNullOrEmpty(dialogue.Text)
-            && TranslationHashing.TryTranslate(table, TranslationHashing.DialogueTextKind, dialogue.Text, out translatedText);
-
-        bool nameChanged = !string.IsNullOrEmpty(dialogue.Name)
-            && TranslationHashing.TryTranslate(table, TranslationHashing.DialogueNameKind, dialogue.Name, out translatedName);
-
-        if (!textChanged && !nameChanged)
+        if (string.IsNullOrEmpty(dialogue.Text)
+            || !TranslationHashing.TryTranslate(table, TranslationHashing.DialogueTextKind, dialogue.Text, out string translatedText))
         {
             return;
         }
 
-        string newText = textChanged ? translatedText : dialogue.Text;
-        string newName = nameChanged ? translatedName : dialogue.Name;
-
+        // The name is passed through as-is: with showInChat disabled the name is
+        // irrelevant to the displayed message.
         // Dialogues must be re-created to change their text; the original is
         // closed afterwards. Prefer the anchored overload, falling back to the
         // last known world position if the target object is already gone.
@@ -52,8 +43,8 @@ public partial class GameScript
             : null;
 
         IDialogue newDialogue = targetObject != null
-            ? Game.CreateDialogue(newText, dialogue.TextColor, targetObject, newName, dialogue.DisplayDuration, false)
-            : Game.CreateDialogue(newText, dialogue.TextColor, dialogue.TargetWorldPosition, newName, dialogue.DisplayDuration, false);
+            ? Game.CreateDialogue(translatedText, dialogue.TextColor, targetObject, dialogue.Name, dialogue.DisplayDuration, false)
+            : Game.CreateDialogue(translatedText, dialogue.TextColor, dialogue.TargetWorldPosition, dialogue.Name, dialogue.DisplayDuration, false);
 
         _createdDialogueIds.Add(newDialogue.ID);
 
