@@ -7,6 +7,7 @@
 Community-driven, open-database translations for every Superfighters Deluxe map
 
 [![GitHub License](https://img.shields.io/github/license/MythoFame/SFD.Scripting.MapTranslationProject)](LICENSE)
+[![Steam Subscriptions](https://img.shields.io/steam/subscriptions/3799029664)](https://steamcommunity.com/sharedfiles/filedetails/?id=3799029664)
 
 ![Banner](.github/assets/banner.png)
 
