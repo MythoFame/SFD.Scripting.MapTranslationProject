@@ -103,7 +103,8 @@ public partial class GameScript : GameScriptInterfaceExtended
 
         string name = obj.Name;
 
-        if (obj is IObjectPlayerSpawnTrigger objectPlayerSpawnTrigger) {
+        if (obj is IObjectPlayerSpawnTrigger objectPlayerSpawnTrigger)
+        {
             IPlayer player = objectPlayerSpawnTrigger.CreatePlayer(_max);
 
             name = player.Name;
