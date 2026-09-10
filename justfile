@@ -11,9 +11,29 @@ validate-translations:
     dotnet run --project SFD.Scripting.MapTranslationProject.Generator validate
 
 generate-readme:
-    @count=$(find db/maps -mindepth 2 -maxdepth 2 -name '*.tsv' ! -name 'strings.tsv' -exec dirname {} \; | sort -u | wc -l) && \
-        sed "s/@@TRANSLATED_MAPS@@/$count/g" .README.bbcode > README.bbcode && \
-        echo "README.bbcode generated ($count translated maps)."
+    #!/usr/bin/env python3
+    import json
+    from pathlib import Path
+
+    template = Path(".README.bbcode").read_text(encoding="utf-8")
+
+    maps_root = Path("db/maps")
+    translated_maps = {
+        p.parent for p in maps_root.glob("*/*.tsv") if p.name != "strings.tsv"
+    }
+
+    languages = json.loads(Path("db/languages.json").read_text(encoding="utf-8"))
+    language_items = "\n".join(f"    [*]{l['displayName']} [i]({l['code']})[/i]" for l in languages)
+
+    output = (
+        template
+        .replace("@@TRANSLATED_MAPS@@", str(len(translated_maps)))
+        .replace("@@LANGUAGES@@", language_items)
+    )
+
+    Path("README.bbcode").write_text(output + "\n", encoding="utf-8")
+
+    print(f"README.bbcode generated ({len(translated_maps)} translated maps, {len(languages)} languages).")
 
 process-dump:
     #!/usr/bin/env python3
