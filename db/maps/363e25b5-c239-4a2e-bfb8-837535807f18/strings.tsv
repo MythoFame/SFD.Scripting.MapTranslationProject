@@ -47,3 +47,115 @@ Hm! Ze Kriegbär has escaped? That bodes ill for you, my Lieblings!	bgspeaker.kr
 Ah, poor Kriegbär #2! He vas one of my favorite creatures. Oh vell... I admit defeat. Come in, and let us discuss the terms of my surrender!	bgspeaker.poor_kriegbar_favorite_admit_defeat_terms_surrender	dialogue-text
 You don't look like Nazis - how the hell did you get out alive?	lt_kowalski.dont_look_like_nazis_how_get_out_alive_plural	dialogue-text
 You don't look like a Nazi - how the hell did you get out alive?	lt_kowalski.dont_look_like_nazi_how_get_out_alive_singular	dialogue-text
+Urrrgh...	player.urrrgh	dialogue-text
+Where the hell...?	player.where_the_hell	dialogue-text
+Oh, right... Nazis.	player.oh_right_nazis	dialogue-text
+Urrrgh... my head...	player.urrrgh_my_head	dialogue-text
+What are you? German? British?	irina.what_are_you_german_british	dialogue-text
+American. And you, lady? Russian, right?	gene.american_and_you_lady_russian	dialogue-text
+Da. I remember being captured... tortured...	irina.da_remember_captured_tortured	dialogue-text
+Mon dieu... What the hell is going on?	marcel.mon_dieu_what_hell_going_on	dialogue-text
+I don't know, but I'm not going back in one of those tanks.	stave.not_going_back_in_tanks	dialogue-text
+Me too. But where are we... How...?	marcel.me_too_where_are_we_how	dialogue-text
+I don't know, but I'm gonna find out.	stave.dont_know_gonna_find_out	dialogue-text
+Da... where are we?	irina.da_where_are_we	dialogue-text
+I don't know, but I'm not sticking around.	stave.not_sticking_around	dialogue-text
+The symbol of the Six-Sided Sun... so we are in the hands of the SSS.	marcel.symbol_six_sided_sun_sss	dialogue-text
+Hell...	stave.hell	dialogue-text
+What do you know about them?	irina.what_do_you_know_about_them	dialogue-text
+Only that they are Nazis. The worst kind.	gene.only_nazis_worst_kind	dialogue-text
+Fair enough. Then you have some idea of what we're up against.	irina.fair_enough_idea_what_up_against	dialogue-text
+That's no regular Nazi flag. What is this?	marcel.no_regular_nazi_flag_what_is_this	dialogue-text
+They call it 'Die Sechs-Seitige Sonne'. It's bad news.	stave.die_sechs_seitige_sonne_bad_news	dialogue-text
+What do you know about the SSS?	irina.what_do_you_know_about_sss	dialogue-text
+A secret society within the Reich. Secret research - weapons, bio-engineering, the occult...	stave.secret_society_reich_research_occult	dialogue-text
+Jeez. And here I thought regular Nazis were bad enough.	gene.jeez_regular_nazis_bad_enough	dialogue-text
+Is there an air raid going on? That might give me a chance...	player.air_raid_give_me_chance	dialogue-text
+Is there an air raid going on? Could be our chance of escape...	gene.air_raid_chance_of_escape	dialogue-text
+I fear our chances are somewhat slim.	marcel.fear_chances_somewhat_slim	dialogue-text
+Is there a way up to the surface?	player.way_up_to_surface	dialogue-text
+You won't take me alive, you devils!	player.wont_take_me_alive_devils	dialogue-text
+I feel... different. Stronger... What the hell did that crazy doctor do to me?	player.feel_different_stronger_crazy_doctor	dialogue-text
+I feel... different. Stronger... more durable.	player.feel_different_stronger_durable	dialogue-text
+...Angrier.	player.angrier	dialogue-text
+I believe they had a notion of turning human beings into weapons.	stave.believe_turning_humans_into_weapons	dialogue-text
+Guess they should've thought twice.	gene.shouldve_thought_twice	dialogue-text
+These Nazis don't put up much of a fight, do they?	gene.nazis_dont_put_up_fight	dialogue-text
+Strange... I was never much of a fighter, but now I feel unstoppable!	marcel.never_fighter_now_unstoppable	dialogue-text
+I too feel in excellent physical condition...	irina.feel_excellent_physical_condition	dialogue-text
+Must be all those vitamins they made us swim in...	gene.must_be_vitamins_swim_in	dialogue-text
+I'll ask the head scientist while I squeeze his Nazi neck!	irina.ask_head_scientist_squeeze_neck	dialogue-text
+What the hell did they do to me? I feel like I could lift a truck!	stave.what_did_they_do_lift_truck	dialogue-text
+I'll ask that scientist who tortured us... while I squeeze his Nazi neck!	irina.ask_scientist_tortured_squeeze_neck	dialogue-text
+Guess they kept our old clothes.	player.kept_old_clothes	dialogue-text
+What the hell was that!	player.what_the_hell_was_that	dialogue-text
+Give it up, Fritzliebe! We've destroyed all your toys!	gene.give_it_up_fritzliebe_destroyed_toys	dialogue-text
+Glad we're on the same side. I'm Lt. Eugene McBride, US Army.	gene.glad_same_side_mcbride_army	dialogue-text
+Sgt. Irina Petrovska, Red Army.	irina.sgt_petrovska_red_army	dialogue-text
+Marcel Marie, French Resistance.	marcel.marcel_marie_french_resistance	dialogue-text
+Uh-oh. What's that noise?	gene.uh_oh_whats_that_noise	dialogue-text
+You fought well back there. I am Sgt. Irina Petrovska.	irina.fought_well_petrovska	dialogue-text
+Enchanté, madame. Marcel Marie, French Resistance.	marcel.enchante_madame_resistance	dialogue-text
+Lt. Eugene McBride, US Army...	gene.mcbride_us_army_ellipsis	dialogue-text
+Shhh! Listen! What's that?	irina.shhh_listen_whats_that	dialogue-text
+Allow me to introduce myself... Marcel Marie, French Resistance.	marcel.allow_introduce_myself_resistance	dialogue-text
+Lt. Eugene McBride. American.	gene.mcbride_american	dialogue-text
+Sgt. Irina Petrovska. Russia.	irina.petrovska_russia	dialogue-text
+Shh! I thought I heard something...	marcel.shh_thought_heard_something	dialogue-text
+Incoming!	player.incoming	dialogue-text
+Here they come!	player.here_they_come	dialogue-text
+Nazis!	player.nazis	dialogue-text
+Look out!	player.look_out	dialogue-text
+What about you, tough guy? What do they call you?	gene.what_about_you_tough_guy	dialogue-text
+Me? My name...	stave.me_my_name	dialogue-text
+...is Stave Rygur.	stave.is_stave_rygur	dialogue-text
+That's not a real name!	gene.thats_not_real_name	dialogue-text
+Suit yourself.	gene.suit_yourself	dialogue-text
+Cannons... that crazy doctor mentioned some kind of... anti-air system. If the cannons were destroyed, maybe the bombers have a chance...	player.cannons_crazy_doctor_antiair_bombers_chance	dialogue-text
+Nice and easy now...	player.nice_and_easy_now	dialogue-text
+No way the bombers are getting through THAT kind of fire. I don't like it... but let's see about those cannons.	player.bombers_fire_see_about_cannons	dialogue-text
+I need a hand grenade...	player.need_hand_grenade	dialogue-text
+Damn noise! Gotta kill those cannons!	player.damn_noise_kill_cannons	dialogue-text
+Better lob a grenade in the barrel.	player.better_lob_grenade_barrel	dialogue-text
+A grenade down the barrel oughtta shut those cannons up...	player.grenade_barrel_shut_cannons_up	dialogue-text
+We have to blow them up from the INSIDE!	player.blow_them_up_from_inside	dialogue-text
+A hand grenade down the throat will kill anything!	player.grenade_throat_kill_anything	dialogue-text
+Anybody got a grenade?	player.anybody_got_grenade	dialogue-text
+Gotta destroy those cannons!	player.gotta_destroy_cannons	dialogue-text
+A grenade in the barrel oughtta do the trick!	player.grenade_barrel_do_trick	dialogue-text
+Destroy the cannons! A grenade in the barrel ought to do it.	player.destroy_cannons_grenade_barrel	dialogue-text
+Destroy the cannons by throwing a grenade down the barrel!	player.destroy_cannons_throwing_grenade_barrel	dialogue-text
+Try throwing the grenades INTO the cannons!	player.throw_grenades_into_cannons	dialogue-text
+That works! Two cannons to go!	player.two_cannons_to_go	dialogue-text
+One cannon left!	player.one_cannon_left	dialogue-text
+That's all the cannons gone! The bombers can get through now!	player.all_cannons_gone_bombers_through	dialogue-text
+Bring on the bombs! Though I'd like to get below ground first...	player.bring_bombs_get_below_ground	dialogue-text
+Good job! I don't know about you, but I'd like to get below ground.	player.good_job_get_below_ground	dialogue-text
+Aaaaaaaah!	player.aaaaaaah	dialogue-text
+That was... rough. But I'm not dead yet.	player.rough_not_dead_yet	dialogue-text
+That was... rough. How long was I unconscious?	gene.rough_how_long_unconscious	dialogue-text
+There's snow... but no sun. It must be night outside.	irina.snow_no_sun_night_outside	dialogue-text
+Should we wait here? Maybe they'll rescue us.	marcel.should_wait_rescue_us	dialogue-text
+No. Let us go on. This castle isn't dead yet.	stave.go_on_castle_isnt_dead	dialogue-text
+What makes you say that?	gene.what_makes_you_say_that	dialogue-text
+Argh!!!	player.argh	dialogue-text
+I have to get that door open! That valve looks right...	player.get_door_open_valve_right	dialogue-text
+Get that door open! Try the valve!	player.get_door_open_try_valve	dialogue-text
+We need to get through that door! Try the valve!	player.get_through_door_try_valve	dialogue-text
+Open that door! Try the valve!	player.open_door_try_valve	dialogue-text
+Try that red valve!	player.try_red_valve	dialogue-text
+Door is open! Gotta get inside!	player.door_open_get_inside	dialogue-text
+The door is open! Get inside!	player.the_door_is_open_get_inside	dialogue-text
+Get inside! Quick!	player.get_inside_quick	dialogue-text
+Hurry, through the door!	player.hurry_through_door	dialogue-text
+Go, go! The door is open!	player.go_go_door_open	dialogue-text
+Now how the hell do I close the door!	player.how_close_door	dialogue-text
+Close the door!	player.close_door	dialogue-text
+Second valve! Close the door!	player.second_valve_close_door	dialogue-text
+Get that door closed!	player.get_door_closed	dialogue-text
+Close the door! That'll keep them out!	player.close_door_keep_them_out	dialogue-text
+The door is closed! They can't get in!	player.door_closed_cant_get_in	dialogue-text
+You can't get through now, you rotten bastards!	player.cant_get_through_rotten_bastards	dialogue-text
+Door closed!	player.door_closed	dialogue-text
+They can't get through THAT!	player.cant_get_through_that	dialogue-text
+It works! The door is closed!	player.works_door_closed	dialogue-text
