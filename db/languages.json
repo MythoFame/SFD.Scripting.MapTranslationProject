@@ -1,5 +1,6 @@
 [
     { "code": "es-ES", "displayName": "Español (España)" },
+    { "code": "es-419", "displayName": "Español (Latinoamérica)" },
     { "code": "ru-RU", "displayName": "Русский (Россия)" },
     { "code": "pt-BR", "displayName": "Português (Brasil)" }
 ]
