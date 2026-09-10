@@ -4,11 +4,16 @@ _default:
 generate-script:
     dotnet build SFD.Scripting.MapTranslationProject.csproj -t:GenerateScript
 
-generate-translations:
+generate-translations: generate-readme
     dotnet run --project SFD.Scripting.MapTranslationProject.Generator generate
 
 validate-translations:
     dotnet run --project SFD.Scripting.MapTranslationProject.Generator validate
+
+generate-readme:
+    @count=$(find db/maps -mindepth 2 -maxdepth 2 -name '*.tsv' ! -name 'strings.tsv' -exec dirname {} \; | sort -u | wc -l) && \
+        sed "s/@@TRANSLATED_MAPS@@/$count/g" .README.bbcode > README.bbcode && \
+        echo "README.bbcode generated ($count translated maps)."
 
 process-dump:
     #!/usr/bin/env python3
